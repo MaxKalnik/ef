@@ -1,0 +1,94 @@
+body
+  font-family: 'Montserrat', sans-serif
+  font-smoothing: antialiased
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+.page-header
+  min-height: 528px
+  background: #1F2633
+  color: $color_white
+
+.section__title
+  position: relative
+  font-size: 52px
+  line-height: 64px
+  color: #484A4D
+  font-weight: 900
+  width: 357px
+  padding-left: 40px
+  padding-bottom: 24px
+
+.section__title--top-offers
+  max-height: 128px
+  &:before
+    content: ''
+    width: 13px
+    height: 16px
+    position: absolute
+    left: 3px
+    top: 20px
+    background: url('images/pointer.svg') center no-repeat
+
+  &:after
+    content: ''
+    width: 1px
+    height: 111px
+    position: absolute
+    left: 9px
+    bottom: 0
+    background: #fc5245
+
+.wrapper
+  padding: 48px 152px 48px 112px
+
+.primary-text
+  max-width: 714px
+  font-size: 18px
+  line-height: 32px
+  color: #787B80
+  padding-left: 40px
+  padding-bottom: 24px
+  font-weight: 400
+
+.primary-text--top-offers
+  position: relative
+  &:before
+    content: ''
+    width: 1px
+    height: 100%
+    position: absolute
+    left: 9px
+    top: 0
+    background: #fc5245
+    font-weight: 700
+
+.section__sub-title
+  position: relative
+  font-size: 20px
+  line-height: 24px
+  color: #fc5245
+  text-transform: uppercase
+  font-weight: 700
+  padding-left: 40px
+
+.section__sub-title--top-offers
+  max-height: 24px
+  &:before
+    content: ''
+    width: 7px
+    height: 7px
+    position: absolute
+    left: 6px
+    top: 8px
+    background: url('images/oval-red.svg') center no-repeat
+
+  &:after
+    content: ''
+    width: 1px
+    height: 4px
+    position: absolute
+    left: 9px
+    top: 0
+    background: #fc5245
+

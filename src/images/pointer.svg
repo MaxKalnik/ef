@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="16px" viewBox="0 0 13 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Index" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1440_Home" transform="translate(-114.000000, -596.000000)" fill-rule="nonzero" fill="#FC5245">
+            <g id="Offers" transform="translate(112.000000, 498.000000)">
+                <g id="Line" transform="translate(0.000000, 98.000000)">
+                    <g id="pointer" transform="translate(2.000000, 0.000000)">
+                        <path d="M6.50003628,0 C2.91017648,0 0,2.64650357 0,5.91113965 C0,9.99394134 4.4923675,14.4303537 6.00769669,15.8106759 C6.28395975,16.0623069 6.71640304,16.0633146 6.99339168,15.812448 C8.50977295,14.4391445 13,10.0252475 13,5.91113965 C13.0000363,2.64650357 10.0898961,0 6.50003628,0 Z M6.50003628,8.58446719 C5.01681383,8.58446719 3.81446185,7.43287834 3.81446185,6.01235494 C3.81446185,4.5917968 5.01685011,3.4402427 6.50003628,3.4402427 C7.98322245,3.4402427 9.18561071,4.59183155 9.18561071,6.01235494 C9.18561071,7.43291309 7.98322245,8.58446719 6.50003628,8.58446719 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
