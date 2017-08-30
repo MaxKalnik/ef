@@ -5,12 +5,15 @@ body
   -moz-osx-font-smoothing: grayscale
 
 .page-header
-  min-height: 528px
+  min-height: 376px
   background: #1F2633
   color: $color_white
   padding: 0 152px 0 152px
   background: url('images/header-bg.png') center no-repeat
   background-size: cover
+
+  &--home
+    min-height: 528px
 
 .page-header__logo
   padding-top: 16px
@@ -142,10 +145,6 @@ body
     bottom: 0
     background: #fc5245
 
-.section__title--top-offers
-  max-height: 128px
-  width: 357px
-
 .wrapper
   padding: 48px 152px 0 112px
 
@@ -267,13 +266,16 @@ body
 
 .section-top-offers__call
   position: absolute
-  top: -100px
+  top: -80px
   right: 0
   padding: 32px
   background: #ffffff
   box-shadow: 0 10px 24px 0 rgba(15,71,77,0.16)
   border-radius: 6px
   z-index: 5
+
+  &--home
+    top: -100px
 
 .section-top-offers__button
   font-size: 12px
@@ -286,7 +288,6 @@ body
   display: flex
   flex-direction: row
   justify-content: center
-  padding-top: 48px
   &:before
     content: ''
     width: 7px
@@ -305,6 +306,7 @@ body
 
 .section__btn-container--top-offers
   padding-left: 40px
+  padding-top: 48px
 
 .section-top-offers__call-text
   font-size: 16px
@@ -369,6 +371,7 @@ body
     height: 50px
 
 .section__btn-container--compare
+  padding-left: 40px
   &:before,
   &:after
     display: none
@@ -378,6 +381,7 @@ body
   border: 1px solid #d1e6f1
   border-radius: 5px
   margin-left: 40px
+  margin-bottom: 42px
 
 .section__compare-table
   width: 100%
@@ -434,6 +438,9 @@ body
   background-size: cover
   margin-bottom: 36px
 
+  height: 440px
+  box-sizing: border-box
+
 .section__title--clients
   width: 650px
   color: #ffffff
@@ -452,6 +459,7 @@ body
   position: relative
 
 .section__slide-item--first
+  position: relative
   opacity: 0
   transition: .5s ease-in
   &:hover
@@ -539,6 +547,7 @@ body
   flex-direction: row
   justify-content: space-between
   padding-left: 40px
+  position: relative
 
 .section__stats-item
   width: 32%
@@ -547,7 +556,16 @@ body
   border-radius: 6px
   margin-right: 34px
   &:last-child
+    position: relative
     margin-right: 0
+    z-index: 3
+
+.section__stats-img-support
+  position: absolute
+  bottom: 168px
+  right: 50px
+  width: 300px
+  height: 404px
 
 .section__stats-item-top
   font-size: 72px
@@ -572,7 +590,7 @@ body
 
 .page-footer__title
   font-size: 44px
-  linee-height: 48px
+  line-height: 48px
   font-weight: 900
   color: #ffffff
   margin-bottom: 32px
@@ -625,14 +643,14 @@ body
   color: #50cfe3
   font-weight: 700
 
-.page-cards
+.page-footer__cards
   display: flex
   flex-direction: row
   align-items: center
   img
     margin-right: 10px
 
-.page-cards-text
+.page-footer__cards-text
   font-size: 12px
   line-height: 16px
   margin-right: 10px
