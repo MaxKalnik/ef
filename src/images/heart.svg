@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="14px" viewBox="0 0 16 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>pointer</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Index" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1440_Home" transform="translate(-600.000000, -2445.000000)">
+            <g id="Testimonials" transform="translate(-2.000000, 2185.000000)">
+                <g id="Line" transform="translate(602.000000, 259.000000)">
+                    <g id="pointer">
+                        <rect id="Rectangle-12" x="0" y="0" width="16" height="16"></rect>
+                        <path d="M16,5.36437247 C16,2.95395674 14.0654937,1 11.6791924,1 C10.1209817,1 8.76017365,1.83590118 7.99995129,3.08512802 C7.23982635,1.83590118 5.87843375,1 4.32025556,1 C1.93395424,1 0,2.95395674 0,5.36437247 C0,6.67670846 0.575711511,7.85078816 1.48306844,8.65031302 L7.6056657,14.8350437 C7.71022835,14.940663 7.85203737,15 7.99995129,15 C8.14786521,15 8.28967424,14.940663 8.39423688,14.8350437 L14.5168341,8.65031302 C15.4242235,7.85078816 16,6.67670846 16,5.36437247 Z" id="Shape" fill="#FC6148" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -9,35 +9,42 @@
 </head>
 <body>
   <header class="page-header">
-    <div class="page-header__logo">
-      <img src="">
+    <div class="page-header__top">
+      <div class="page-header__logo">
+        <a href="#"><img src="images/upper-logo.svg"></a>
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--active" href="#">Home</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Offers</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">How to book</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">About</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Contacts</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Blog</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="page-header__callback">
+        <div class="page-header__callback-num">
+          <a href="tel:866.456.33.22" class="page-header__callback-upper">call: 24/7</a>
+          <a href="tel:866.456.33.22" class="page-header__callback-lower">866.456.33.22</a>
+        </div>
+        <a class="page-header__callback-button">Request callback</a>
+      </div>
     </div>
-    <nav class="main-nav">
-      <ul class="main-nav__list">
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="#">Home</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="#">Offers</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="#">How to book</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="#">About</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="#">Contacts</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="#">Blog</a>
-        </li>
-      </ul>
-    </nav>
     <h1 class="main-title">Fly business and first class for less</h1>
-    <p><strong>Get up to 58%* OFF on Business and First Class Flights with Expert Fares</strong></p>
-
-
+    <p class="page-header__text"><strong>Get up to 58%* OFF on Business and First Class Flights with Expert Fares</strong></p>
   </header>
   <main class="page-content">
     <div class="wrapper">
@@ -45,11 +52,203 @@
         <h2 class="section__title section__title--top-offers">Hand picked just for you</h2>
         <p class="primary-text primary-text--top-offers">Save up to 50-77%* OFF on Business and First Class Flights with SkyLux Travel. If you would like to lower travel costs for you or your business.</p>
         <h3 class="section__sub-title section__sub-title--top-offers">Our top Offers</h3>
-        <ul class="section__top-offers-list"></ul>
-        <div class="modal"></div>
+        <ul class="section__top-offers-list">
+          <li class="section__top-offers-item">
+            <a class="top-offers-link" href="#">
+              <div class="top-offers-link__upper top-offers-link__upper--sydney">
+                <p class="top-offers-link__price">$ 2,760</p>
+                <p class="top-offers-link__city">Sydney</p>
+              </div>
+              <div class="top-offers-link__button">book now</div>
+            </a>
+          </li>
+          <li class="section__top-offers-item">
+            <a class="top-offers-link" href="">
+              <div class="top-offers-link__upper top-offers-link__upper--bangkok">
+                <p class="top-offers-link__price">$ 2,479</p>
+                <p class="top-offers-link__city">Bangkok</p>
+              </div>
+              <div class="top-offers-link__button">book now</div>
+            </a>
+          </li>
+          <li class="section__top-offers-item">
+            <a class="top-offers-link" href="">
+              <div class="top-offers-link__upper top-offers-link__upper--venice">
+                <p class="top-offers-link__price">$ 1,869</p>
+                <p class="top-offers-link__city">Venice</p>
+              </div>
+              <div class="top-offers-link__button">book now</div>
+            </a>
+          </li>
+          <li class="section__top-offers-item">
+            <a class="top-offers-link" href="">
+              <div class="top-offers-link__upper top-offers-link__upper--telaviv">
+                <p class="top-offers-link__price">$ 2,430</p>
+                <p class="top-offers-link__city">Tel Aviv</p>
+              </div>
+              <div class="top-offers-link__button">book now</div>
+            </a>
+          </li>
+        </ul>
+        <div class="section-top-offers__call">
+          <p class="section-top-offers__call-text">
+            Need Instant Help?<br>
+            Call for a Deal Right Now
+          </p>
+          <p class="section-top-offers__call-num">866.456.33.22</p>
+          <p class="section-top-offers__call-text">or</p>
+          <a class="section-top-offers__call-button">request callback</a>
+        </div>
+        <div class="section__btn-container section__btn-container--top-offers">
+          <a class="section__btn-see">see more offers</a>
+          <a class="section__btn-quote">get a quote</a>
+        </div>
+      </section>
+      <section class="section section--compare">
+        <h2 class="section__title section__title--compare">Check out where do we stand</h2>
+        <p class="primary-text primary-text--compare">Do you want to find out how we compare to our main competitors? Look at the below table to see we do we stand.</p>
+        <h3 class="section__sub-title section__sub-title--compare">COMPARE TABLE</h3>
+        <div class="section__compare-table-container">
+          <table class="section__compare-table">
+            <thead>
+              <tr>
+                <th>Most Popular Destionations</th>
+                <th></th>
+                <th>FlyWorldClass</th>
+                <th><img src="images/skylux.png"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>New York — London</td>
+                <td rowspan="6"><img class="table-logo-img" src="images/table-col.png" srcset="images/table-col@2x.png"></td>
+                <td>$ 3,600</td>
+                <td>$ 3,800</td>
+              </tr>
+              <tr>
+                <td>Seatle — Hong Kong</td>
+                <td>$ 4,000</td>
+                <td>$ 4,200</td>
+              </tr>
+              <tr>
+                <td>Washington D.C. — Singapore</td>
+                <td>$ 4,220</td>
+                <td>$ 4,420</td>
+              </tr>
+              <tr>
+                <td>New York — Shanghai</td>
+                <td>$ 4,824</td>
+                <td>$ 4,950</td>
+              </tr>
+              <tr>
+                <td>New York — Seoul</td>
+                <td>$ 7,900</td>
+                <td>$ 8,000</td>
+              </tr>
+              <tr>
+                <td>New York — Tokyo</td>
+                <td>$ 8,300</td>
+                <td>$ 8,500</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="section__btn-container section__btn-container--compare">
+          <a class="section__btn-see">see more offers</a>
+        </div>
+      </section>
+    </div>
+    <section class="section section--clients">
+      <h2 class="section__title section__title--clients">Clients tell good things about us</h2>
+      <div class="section__comments">
+        <h3 class="section__sub-title section__sub-title--clients">John</h3>
+        <div class="section__comments-text">“It was made easy booking, especially at the last meeting and both to and from flights were pleasant and hitch free.”</div>
+        <img class="section__comments-img" src="images/man.png" srcset="images/man@2x.png">
+        <div class="slider-controls">
+          <div class="slider__arrow-left"><img src="images/slide-left.svg"></div>
+          <span class="slider__circle slider__circle--1"></span>
+          <span class="slider__circle slider__circle--2"></span>
+          <span class="slider__circle slider__circle--3"></span>
+          <div class="slider__arrow-right"><img src="images/slide-right.svg"></div>
+        </div>
+      </div>
+    </section>
+    <div class="wrapper">
+      <section class="section section--stats">
+        <h2 class="section__title section__title--stats">We work hard to make you happy</h2>
+        <p class="primary-text primary-text--stats">Save up to 50-77%* OFF on Business and First
+         Class Flights with SkyLux Travel.If you would like to lower travel costs for you or your
+          business, give us a try and be sure.</p>
+        <h3 class="section__sub-title section__sub-title--stats">TEAM STATISTICS</h3>
+        <div class="section__stats-list">
+          <div class="section__stats-item">
+            <p class="section__stats-item-top">350</p>
+            <p class="section__stats-item-text">tickets booked</p>
+          </div>
+          <div class="section__stats-item">
+            <p class="section__stats-item-top">$276k</p>
+            <p class="section__stats-item-text">saved to customers</p>
+          </div>
+          <div class="section__stats-item">
+            <p class="section__stats-item-top">1.8m</p>
+            <p class="section__stats-item-text">miles traveled</p>
+          </div>
+        </div>
       </section>
     </div>
   </main>
-
+  <footer class="page-footer">
+    <h2 class="page-footer__title">Ready for your next luxury flight?</h2>
+    <div class="section__btn-container section__btn-container--footer">
+      <a class="section__btn-see">see more offers</a>
+      <a class="section__btn-quote">get a quote</a>
+    </div>
+    <div class="page-footer__links">
+      <div class="page-footer__nav">
+        <ul class="page-footer__nav-list">
+          <li class="page-footer__nav-item">
+            <a href="#" class="page-footer__nav-link">Home</a>
+          </li>
+          <li class="page-footer__nav-item">
+            <a href="#" class="page-footer__nav-link">Offers</a>
+          </li>
+          <li class="page-footer__nav-item">
+            <a href="#" class="page-footer__nav-link">How To Book</a>
+          </li>
+          <li class="page-footer__nav-item">
+            <a href="#" class="page-footer__nav-link">About</a>
+          </li>
+          <li class="page-footer__nav-item">
+            <a href="#" class="page-footer__nav-link">Contacts</a>
+          </li>
+          <li class="page-footer__nav-item">
+            <a href="#" class="page-footer__nav-link">Blog</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__call">
+        <a href="tel:855.444.3334" class="page-footer__call-link">Call Us 24/7: 855.444.3334</a>
+      </div>
+      <div class="page-cards">
+        <p class="page-cards-text">We accept</p>
+        <img src="images/visa.svg">
+        <img src="images/mastercard.svg">
+        <img src="images/discover.svg">
+        <img src="images/amex.svg">
+        <img src="images/paypal.svg">
+      </div>
+      <div class="socials">
+        <a class="socials__item socials-item--fb"></a>
+        <a class="socials__item socials-item--tw"></a>
+        <a class="socials__item socials-item--go"></a>
+      </div>
+    </div>
+    <div class="page-footer__text-container">
+      <p class="page-footer__text page-footer__text--info"><sup class="reg">*</sup>All the fares displayed are in USD and include all taxes, fees and applicable surcharges. All prices are 'from' per person, based on business and first class weekday travel (Monday - Thursday) from the USA, and depend on the chosen class of service, departure city, airline and the route (lowest transatlantic fares are usually from the East Coast; transpacific fares - from the West Coast). The maximum allowable stay is 6 months. Expert Fares is not able to identify some travel partners or itinerary details online so as not to directly compete with regular retail sales of the travel partner. Please call toll-free for our best current prices and all the details. Savings up to 68% off are indicated off the full un-restricted published airfares of major airlines and may vary based on individual fare rules. Some airlines may impose additional baggage charges. The fares are subject to seat availability in the corresponding booking inventory. Seats are limited and may not be available on all flights and dates. The fares are non-refundable, non-exchangeable, and non-transferable. The fares and their governing rules are subject to change without prior notice. Other restrictions may apply. Less restrictive fares available at different rates.</p>
+      <p class="page-footer__text page-footer__text--copyright">© 2017 Expert Fares. All rights reserved. CST # 2119950-40</p>
+      <p class="page-footer__text page-footer__text--services">Luxury Travel Services LLC, 388 Market Street, Suite 1300, San Francisco, CA 94111</p>
+    </div>
+  </footer>
+<script src="js/script.min.js"></script>
 </body>
 </html>

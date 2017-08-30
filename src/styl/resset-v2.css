@@ -18,7 +18,14 @@ figure {margin: 0;}
 
 
 /*************************************************/
-a{text-decoration: none}
+a{text-decoration: none;}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 /* Utils */
 .clearfix:before,
 .clearfix:after {
