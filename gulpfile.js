@@ -125,6 +125,7 @@ gulp.task('watch', function () {
     gulp.watch([dev_path.html + '*.html'], ['copyhtml']);
     gulp.watch(dev_path.js + '**/*.js', ['js']);
     livereload.listen();
+    gulp.watch('build/**/*', browsersync.reload);
     gulp.watch(['src/**']).on('change', livereload.changed);
 });
 
