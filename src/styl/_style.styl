@@ -104,13 +104,13 @@ body
   line-height: 72px
   font-weight: 900
   text-align: center
+  margin-bottom: 16px
 
 .page-header__text
   font-size: 24px
   line-height: 32px
   color: #e0fcff
   text-align: center
-  margin-bottom: 16px
 
 .section--top-offers
   position: relative
@@ -448,12 +448,33 @@ body
     height: 117px
     background: white
 
-.section__comments-img
+.section__comments
+  position: relative
+
+.section__slide-item--first
+  opacity: 0
+  transition: .5s ease-in
+  &:hover
+    opacity: 1
+
+.section__slide-item--second
   position: absolute
-  left: 95px
-  bottom: 0
+  top: 0
+
+.section__slide-item--third
+  position: absolute
+  display: none
+  top: 0
+
+.section__comments-img
+  content: ''
+  position: absolute
+  left: -515px
+  bottom: -98px
   width: 440px
   height: 599px
+  background: url('images/man.png') center no-repeat
+  background-size: cover
 
 .section__sub-title--clients
   margin-bottom: 0
