@@ -15,6 +15,37 @@ body
   &--home
     min-height: 528px
 
+.page-header__toggle-btn
+  display: none
+  position: relative
+  width: 24px
+  height: 24px
+  &:before
+    content: ''
+    position: absolute
+    top: 6px
+    left: 5px
+    width: 14px
+    height: 2px
+    background: rgba(255, 255, 255, 1)
+    box-shadow: 0 5px 0 0 rgba(255, 255, 255, 1), 0 10px 0 0 rgba(255, 255, 255, 1)
+    cursor: pointer
+
+.page-header__close-btn
+  display: none
+  position: relative
+  width: 24px
+  height: 24px
+  &:before
+    content: ''
+    position: absolute
+    top: 6px
+    left: 6px
+    width: 12px
+    height: 12px
+    background: url('images/close-icon.svg')
+    cursor: pointer
+
 .page-header__logo
   padding-top: 16px
   margin-right: 100px
@@ -165,7 +196,7 @@ body
     top: 0
     background: #fc5245
     font-weight: 700
-  
+
 .primary-text--limited
   max-width: 714px
 
@@ -379,59 +410,86 @@ body
     display: none
 
 .section__compare-table-container
-  position: relative
-  border: 1px solid #d1e6f1
-  border-radius: 5px
-  margin-left: 40px
-  margin-bottom: 42px
+  display: flex
+  flex-direction: row
+  align-items: flex-end
+  margin-bottom: 45px
 
-.section__compare-table
+.column-head
   width: 100%
-  border-collapse: collapse
+  padding: 16px 23px
+  font-size: 14px
+  line-height: 24px
+  text-align: center
+  font-weight: 600
+  color: #797f92
+  background: #f6fafc
+  box-sizing: border-box
+  border: 1px solid #d8e9f2
 
-  th
-    padding: 16px 25px
-    background: #f4fafc
-    text-align: center
-    font-size: 14px
-    line-height: 24px
-    font-weight: 600
-    color: #797f92
-    border-left: 1px solid #c8e0ed
+.column-cell
+  width: 100%
+  padding: 16px 23px
+  font-size: 14px
+  line-height: 24px
+  font-weight: 400
+  color: #787b80
+  text-align: center
+  box-sizing: border-box
+  border-bottom: 1px solid #d8e9f2
 
-  th:first-child
-    text-transform: uppercase
+.column--first
+  width: 31%
+  border-radius: 3px 0 0 3px
+
+  .column-head
     text-align: left
+    text-transform: uppercase
     color: #484a4d
+    border-right: none
+
+  .column-cell
+    text-align: left
+    border-left: 1px solid #d8e9f2
+
+.column--second
+  width: 23%
+  box-shadow: 0 10px 24px 0 rgba(15,71,77,0.12)
+
+  .column-head
+    background-image: linear-gradient(-180deg, #65769D 0%, #00123A 100%)
+    padding-top: 32px
+    padding-bottom: 33px
+    border-radius: 3px 3px 0 0
     border-left: none
 
-  th:nth-child(2)
-    overflow: visible
-
-  td
-    padding: 16px 25px
-    border-top: 1px solid #c8e0ed
-    border-right: 1px solid #c8e0ed
-    text-align: center
-    font-size: 14px
+  .column-cell
+    font-size: 18px
     line-height: 24px
-    font-weight: 500
-    color: #787b80
+    color: #00bfa6
+    font-weight: 900
+    border-bottom: 1px solid #d4edf6
 
-  td:first-child
-    width: 326px
-    text-align: left
+.column--third
+  width: 23%
 
-  td:nth-child(2)
-    width: 218px
-    position: relative
+  .column-head
+    border-left: none
 
-  .table-logo-img
-    position: absolute
-    bottom: -33px
-    left: -25px
-    width: 318px
-    height: 469px
+  .column-cell
+    border-right: 1px solid #d8e9f2
+
+.column--fourth
+  width: 23%
+
+  .column-head
+    border-left: none
+    padding-top: 15px
+    padding-bottom: 15px
+
+  .column-cell
+    border-right: 1px solid #d8e9f2
+
 
 .section--clients
   position: relative
@@ -512,6 +570,9 @@ body
   font-style: italic
   margin: 16px 0 24px 40px
 
+  &--limited
+    width: 652px
+
 .slider__arrow-left
   display: inline-block
   font-size: inherit
@@ -539,10 +600,18 @@ body
   margin-right: 0
 
 .section--stats
+  padding-top: 12px
   margin-bottom: 96px
 
 .section__title--stats
-  width: 515px
+  &:before
+    width: 16px
+    height: 16px
+    background: url('images/pie-chart.svg') center no-repeat
+    background-size: cover
+
+.section__sub-title--stats
+  margin-bottom: 48px
 
 .section__stats-list
   display: flex
@@ -565,7 +634,8 @@ body
 .section__stats-img-support
   position: absolute
   bottom: 168px
-  right: 50px
+  right: 50%
+  transform: translateX(50%)
   width: 300px
   height: 404px
 
@@ -597,6 +667,9 @@ body
   color: #ffffff
   margin-bottom: 32px
   text-align: center
+
+.primary-text--stats-limited
+  width: 624px
 
 .section__btn-container--footer
   margin-bottom: 96px

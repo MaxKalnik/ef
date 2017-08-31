@@ -13,7 +13,9 @@
       <div class="page-header__logo">
         <a href="#"><img src="images/upper-logo.svg"></a>
       </div>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed">
+        <a class="page-header__toggle-btn" href="#"></a>
+        <a class="page-header__close-btn" href="#"></a>
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link main-nav__link--active" href="#">Home</a>
@@ -95,7 +97,7 @@
             Need Instant Help?<br>
             Call for a Deal Right Now
           </p>
-          <p class="section-top-offers__call-num">866.456.33.22</p>
+          <a href="tel:866.456.33.22" class="section-top-offers__call-num">866.456.33.22</a>
           <p class="section-top-offers__call-text">or</p>
           <a class="section-top-offers__call-button">request callback</a>
         </div>
@@ -109,49 +111,42 @@
         <p class="primary-text primary-text--limited primary-text--compare">Do you want to find out how we compare to our main competitors? Look at the below table to see we do we stand.</p>
         <h3 class="section__sub-title section__sub-title--compare">COMPARE TABLE</h3>
         <div class="section__compare-table-container">
-          <table class="section__compare-table">
-            <thead>
-              <tr>
-                <th>Most Popular Destionations</th>
-                <th></th>
-                <th>FlyWorldClass</th>
-                <th><img src="images/skylux.png"></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>New York — London</td>
-                <td rowspan="6"><img class="table-logo-img" src="images/table-col.png" srcset="images/table-col@2x.png 2x"></td>
-                <td>$ 3,600</td>
-                <td>$ 3,800</td>
-              </tr>
-              <tr>
-                <td>Seatle — Hong Kong</td>
-                <td>$ 4,000</td>
-                <td>$ 4,200</td>
-              </tr>
-              <tr>
-                <td>Washington D.C. — Singapore</td>
-                <td>$ 4,220</td>
-                <td>$ 4,420</td>
-              </tr>
-              <tr>
-                <td>New York — Shanghai</td>
-                <td>$ 4,824</td>
-                <td>$ 4,950</td>
-              </tr>
-              <tr>
-                <td>New York — Seoul</td>
-                <td>$ 7,900</td>
-                <td>$ 8,000</td>
-              </tr>
-              <tr>
-                <td>New York — Tokyo</td>
-                <td>$ 8,300</td>
-                <td>$ 8,500</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="column column--first">
+            <div class="column-head">Most Popular Destionations</div>
+            <div class="column-cell">New York — London</div>
+            <div class="column-cell">Seatle — Hong Kong</div>
+            <div class="column-cell">Washington D.C. — Singapore</div>
+            <div class="column-cell">New York — Shanghai</div>
+            <div class="column-cell">New York — Seoul</div>
+            <div class="column-cell">New York — Tokyo</div>
+          </div>
+          <div class="column column--second">
+            <div class="column-head"><img src="images/upper-logo.svg"></div>
+            <div class="column-cell">$ 2,300</div>
+            <div class="column-cell">$ 2,960</div>
+            <div class="column-cell">$ 3,120</div>
+            <div class="column-cell">$ 4,050</div>
+            <div class="column-cell">$ 6,300</div>
+            <div class="column-cell">$ 7,200</div>
+          </div>
+          <div class="column column--third">
+            <div class="column-head">FlyWorldClass</div>
+            <div class="column-cell">$ 3,600</div>
+            <div class="column-cell">$ 4,000</div>
+            <div class="column-cell">$ 4,220</div>
+            <div class="column-cell">$ 4,824</div>
+            <div class="column-cell">$ 7,900</div>
+            <div class="column-cell">$ 8,300</div>
+          </div>
+          <div class="column column--fourth">
+            <div class="column-head"><img src="images/skylux.png"></div>
+            <div class="column-cell">$ 3,800</div>
+            <div class="column-cell">$ 4,200</div>
+            <div class="column-cell">$ 4,420</div>
+            <div class="column-cell">$ 4,950</div>
+            <div class="column-cell">$ 8,000</div>
+            <div class="column-cell">$ 8,500</div>
+          </div>
         </div>
         <div class="section__btn-container section__btn-container--compare">
           <a class="section__btn-see">see more offers</a>
@@ -164,17 +159,17 @@
         <ul class="section__slide-list">
           <li class="section__slide-item section__slide-item--first">
             <h3 class="section__sub-title section__sub-title--clients">John</h3>
-            <div class="section__comments-text">“It was made easy booking, especially at the last meeting and both to and from flights were pleasant and hitch free.”</div>
+            <div class="section__comments-text section__comments-text--limited">“It was made easy booking, especially at the last meeting and both to and from flights were pleasant and hitch free.”</div>
             <img class="section__comments-img" src="images/man.png" srcset="images/man@2x.png 2x">
           </li>
           <li class="section__slide-item section__slide-item--second">
             <h3 class="section__sub-title section__sub-title--clients">John</h3>
-            <div class="section__comments-text">“It was made easy booking, especially at the last meeting and both to and from flights were pleasant and hitch free.”</div>
+            <div class="section__comments-text section__comments-text--limited">“It was made easy booking, especially at the last meeting and both to and from flights were pleasant and hitch free.”</div>
             <img class="section__comments-img" src="images/man.png" srcset="images/man@2x.png 2x">
           </li>
           <li class="section__slide-item section__slide-item--third">
             <h3 class="section__sub-title section__sub-title--clients">John</h3>
-            <div class="section__comments-text">“It was made easy booking, especially at the last meeting and both to and from flights were pleasant and hitch free.”</div>
+            <div class="section__comments-text section__comments-text--limited">“It was made easy booking, especially at the last meeting and both to and from flights were pleasant and hitch free.”</div>
             <img class="section__comments-img" src="images/man.png" srcset="images/man@2x.png 2x">
           </li>
         </ul>
@@ -189,8 +184,8 @@
     </section>
     <div class="wrapper">
       <section class="section section--stats">
-        <h2 class="section__title section__title--stats">We work hard to make you happy</h2>
-        <p class="primary-text primary-text--stats">Save up to 50-77%* OFF on Business and First
+        <h2 class="section__title section__title--stats">We work hard <br>to make you happy</h2>
+        <p class="primary-text primary-text--stats-limited">Save up to 50-77%* OFF on Business and First
          Class Flights with SkyLux Travel.If you would like to lower travel costs for you or your
           business, give us a try and be sure.</p>
         <h3 class="section__sub-title section__sub-title--stats">TEAM STATISTICS</h3>
@@ -206,8 +201,8 @@
           <div class="section__stats-item">
             <p class="section__stats-item-top">1.8m</p>
             <p class="section__stats-item-text">miles traveled</p>
+            <img class="section__stats-img-support" src="images/support.png" srcset="images/support@2x.png">
           </div>
-          <img class="section__stats-img-support" src="images/support.png" srcset="images/support@2x.png">
         </div>
       </section>
     </div>

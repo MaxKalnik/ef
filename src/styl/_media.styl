@@ -37,11 +37,18 @@
     margin-left: 34px
 
   .section--clients
-    padding: 72px 40px 72px 495px
+    padding: 72px 40px 72px 488px
+
+  .section__title--clients
+    width: 464px
 
   .section__comments-img
     left: -457px
     bottom: -63px
+
+  .section__stats-img-support
+    width: 245px
+    height: 330px
 
   .page-footer
     padding: 96px 40px 32px 40px
@@ -55,3 +62,56 @@
   .page-footer__cards
     order: 5
     margin-top: 14px
+
+@media (max-width: 1023px)
+  .page-header__top
+    flex-direction: column
+
+  .page-header__toggle-btn
+    display: block
+    position: absolute
+    left: 16px
+    top: 21px
+
+  .main-nav__list
+    flex-direction: column
+
+  .main-nav__link
+    padding-left: 32px
+
+  .main-nav__link--active
+    &:before
+      left: 18px
+
+    &:after
+      width: 15px
+      height: 1px
+      left: 0
+      top: 38px
+
+
+  .main-nav--closed
+    .main-nav__list
+      display: none
+
+  .page-header__logo
+    padding-top: 10px
+    margin-right: auto
+    margin-left: 40px
+
+  .main-nav--opened
+    .page-header__toggle-btn
+      display: none
+
+    .page-header__close-btn
+      display: block
+      position: absolute
+      left: 16px
+      top: 21px
+
+
+  .section__title
+    font-size: 24px
+    line-height: 32px
+
+
