@@ -37,18 +37,35 @@
     margin-left: 34px
 
   .section--clients
-    padding: 72px 40px 72px 488px
+    padding: 72px 40px 72px 458px
 
   .section__title--clients
     width: 464px
 
   .section__comments-img
     left: -457px
-    bottom: -63px
+    bottom: -88px
 
   .section__stats-img-support
     width: 245px
     height: 330px
+
+  .section__comments-text
+    margin: 16px 0 24px 34px
+
+  .section__comments-text--limited
+    width: 464px
+
+  .slider-controls
+    margin-left: 34px
+
+  .section__sub-title--clients
+    margin-bottom: 0
+
+  .section__stats-item:last-child
+    &:before
+      width: 245px
+      height: 330px
 
   .page-footer
     padding: 96px 40px 32px 40px
@@ -64,8 +81,9 @@
     margin-top: 14px
 
 @media (max-width: 1023px)
-  .page-header__top
-    flex-direction: column
+  .page-header
+    padding: 0
+    padding-bottom: 48px
 
   .page-header__toggle-btn
     display: block
@@ -77,18 +95,17 @@
     flex-direction: column
 
   .main-nav__link
-    padding-left: 32px
+    padding-left: 75px
 
   .main-nav__link--active
     &:before
-      left: 18px
+      left: 61px
 
     &:after
-      width: 15px
+      width: 58px
       height: 1px
       left: 0
       top: 38px
-
 
   .main-nav--closed
     .main-nav__list
@@ -97,11 +114,16 @@
   .page-header__logo
     padding-top: 10px
     margin-right: auto
-    margin-left: 40px
+    margin-left: 58px
 
   .main-nav--opened
     .page-header__toggle-btn
       display: none
+
+    .main-nav__list
+      position: absolute
+      left: 0
+      top: 60px
 
     .page-header__close-btn
       display: block
@@ -109,9 +131,152 @@
       left: 16px
       top: 21px
 
+  .page-header__top--opened
+    position: absolute
+    width: 100%
+    padding-bottom: 295px
+    background: #2d3539
+    & + main-title
+      margin-bottom: 100px
+
+  .page-header__callback
+    margin-right: 40px
 
   .section__title
     font-size: 24px
     line-height: 32px
 
+  .section__title
+    padding-left: 29px
+    &:before
+      top: 8px
 
+    &:after
+      height: calc(100% - 28px)
+
+  .section-top-offers__call-num
+    font-size: 32px
+    line-height: 48px
+
+  .section__sub-title
+    padding-left: 29px
+
+  .primary-text
+    font-size: 16px
+    line-height: 24px
+    padding-left: 29px
+
+  .primary-text--top-offers
+    width: 384px
+
+  .section-top-offers__call
+    padding: 32px 24px
+
+  .section__top-offers-list
+    padding-left: 0
+    margin-bottom: 0
+
+  .section__btn-container--top-offers
+    padding-left: 0
+
+  .section__top-offers-list
+    flex-wrap: wrap
+
+  .section__top-offers-item
+    width: 50%
+    &:nth-child(n+3)
+      margin-top: 32px
+
+  .section--top-offers
+    margin-bttom: 64px
+
+  .section__comments-img
+    width: 352px
+    height: 480px
+    bottom: -72px
+    left: -370px
+
+  .section__compare-table-container
+    margin-bottom: 31px
+
+  .column-cell
+    font-size: 12px
+    line-height: 16px
+    padding: 20px 23px
+
+  .column--first
+    width: 43%
+
+  .column--second
+    width: 29%
+    .column-head
+      padding-top: 37px
+      padding-bottom: 37px
+
+    .column-cell
+      font-size: 16px
+      padding: 16px 23px
+
+  .section__compare-table-container
+    margin-left: 29px
+
+  .section--clients
+    height: auto
+    padding: 34px 24px 34px 358px
+    margin-right: 0
+
+  .section__title--clients
+    font-size: 44px
+    line-height: 48px
+    padding-bottom: 16px
+
+  .section__title--clients-limited
+    width: 277px
+
+  .section__comments-text
+    font-size: 16px
+    line-height: 24px
+    margin: 16px 0 24px 29px
+
+  .section__comments-text--limited
+    width: 354px
+
+  .slider-controls
+    margin-left: 29px
+
+  .section__stats-list
+    padding-left: 29px
+
+  .section__stats-item:last-child
+    &:before
+      width: 213px
+      height: 247px
+      background: url('images/support-768.png') center no-repeat
+      background-size: size
+
+  .primary-text--stats-limited
+    width: 408px
+
+  .section__stats-item-top
+    font-size: 52px
+    line-height: 64px
+
+  .page-footer
+    padding: 64px 24px 32px 24px
+
+  .section__btn-container--footer
+    margin-bottom: 64px
+
+  .page-footer__call
+    margin-right: 58px
+
+  .page-footer__text--info
+    margin-bottom: 16px
+
+  .page-footer__title
+    font-size: 32px
+    line-height: 48px
+    margin-bottom: 27px
+
+  .page-footer__nav
+    margin-right: 18px

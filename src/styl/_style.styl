@@ -127,6 +127,7 @@ body
   padding: 8px 22px
   border: 2px solid #00d3e3
   border-radius: 30px
+  cursor: pointer
 
 .main-nav__list
   display: flex
@@ -163,16 +164,16 @@ body
     width: 13px
     height: 16px
     position: absolute
-    left: 3px
+    left: 2px
     top: 20px
     background: url('images/pointer.svg') center no-repeat
 
   &:after
     content: ''
     width: 1px
-    height: 111px
+    height: calc(100% - 40px)
     position: absolute
-    left: 9px
+    left: 8px
     bottom: 0
     background: #fc5245
 
@@ -192,7 +193,7 @@ body
     width: 1px
     height: 100%
     position: absolute
-    left: 9px
+    left: 8px
     top: 0
     background: #fc5245
     font-weight: 700
@@ -214,7 +215,7 @@ body
     width: 7px
     height: 7px
     position: absolute
-    left: 6px
+    left: 5px
     top: 8px
     background: url('images/oval-red.svg') center no-repeat
 
@@ -223,7 +224,7 @@ body
     width: 1px
     height: 4px
     position: absolute
-    left: 9px
+    left: 8px
     top: 0
     background: #fc5245
 
@@ -310,6 +311,9 @@ body
   &--home
     top: -100px
 
+.section-top-offers__call-text
+  margin-bottom: 30px
+
 .section-top-offers__button
   font-size: 12px
   line-height: 16px
@@ -368,6 +372,7 @@ body
   border-radius: 30px
   padding: 16px 44px
   margin-top: 16px
+  cursor: pointer
 
 .section__btn-see
   position: relative
@@ -401,7 +406,7 @@ body
     background: url('images/pointer-up.svg') center no-repeat
 
   &:after
-    height: 50px
+    height: calc(100% - 40px)
 
 .section__btn-container--compare
   padding-left: 40px
@@ -520,13 +525,14 @@ body
 
 .section__slide-item--first
   position: relative
-  opacity: 0
+  opacity: 1
   transition: .5s ease-in
   &:hover
     opacity: 1
 
 .section__slide-item--second
   position: absolute
+  display: none
   top: 0
 
 .section__slide-item--third
@@ -538,7 +544,7 @@ body
   content: ''
   position: absolute
   left: -515px
-  bottom: -98px
+  bottom: -118px
   width: 440px
   height: 599px
   background: url('images/man.png') center no-repeat
@@ -626,10 +632,20 @@ body
   box-shadow: 0 10px 24px 0 rgba(15,71,77,0.16)
   border-radius: 6px
   margin-right: 34px
-  &:last-child
-    position: relative
-    margin-right: 0
-    z-index: 3
+
+.section__stats-item:last-child
+  position: relative
+  margin-right: 0
+  &:before
+    content: ''
+    position: absolute
+    bottom: 168px
+    right: 50%
+    transform: translateX(50%)
+    width: 300px
+    height: 404px
+    background: url('images/support.png') center no-repeat
+    background-size: cover
 
 .section__stats-img-support
   position: absolute
@@ -717,6 +733,7 @@ body
   line-height: 16px
   color: #50cfe3
   font-weight: 700
+  text-transform: uppercase
 
 .page-footer__cards
   display: flex
