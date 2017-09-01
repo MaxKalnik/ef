@@ -85,6 +85,16 @@
     padding: 0
     padding-bottom: 48px
 
+  .main-title
+    font-size: 48px
+    line-height: 52px
+    padding: 0 36px
+
+  .page-header__text
+    font-size: 18px
+    line-height: 24px
+    padding: 0 36px
+
   .page-header__toggle-btn
     display: block
     position: absolute
@@ -202,16 +212,22 @@
   .column-cell
     font-size: 12px
     line-height: 16px
-    padding: 20px 23px
+    padding: 20px 16px
 
   .column--first
     width: 43%
+    .column-head
+      font-size: 12px
+      line-height: 16px
+      padding: 14px 16px
+
+      br
+        display: block
 
   .column--second
     width: 29%
     .column-head
-      padding-top: 37px
-      padding-bottom: 37px
+      padding: 37px 22px
 
     .column-cell
       font-size: 16px
@@ -240,6 +256,9 @@
 
   .section__comments-text--limited
     width: 354px
+
+  .section__title--clients:before
+    left: 1px
 
   .slider-controls
     margin-left: 29px
@@ -280,3 +299,84 @@
 
   .page-footer__nav
     margin-right: 18px
+
+@media (max-width: 767px)
+  .main-title
+    font-size: 28px
+    line-height: 32px
+
+  .page-header__text
+    font-size: 16px
+    line-height: 24px
+
+  .page-header__callback
+    display: none
+
+  .page-header__logo
+    padding-top: 16px
+
+  .page-header__toggle-btn
+    top: 16px
+
+  .page-header__callback-toggle
+    display: block
+    position: absolute
+    right: 16px
+    top: 16px
+
+  .page-header__callback-close
+    display: block
+    position: absolute
+
+  .section-top-offers__call
+    display: none
+
+  .page-header__logo
+    margin-left: auto
+
+  .main-nav__link
+    padding-left: 32px
+
+  .main-nav__link--active
+    &:before
+      left: 18px
+
+    &:after
+      width: 15px
+
+  .page-header__close-btn
+    &:before
+      top: 1px
+
+  .page-header__callback-button
+    padding: 7px 17px
+
+  .page-header__callback-num
+    margin-right: 18px
+
+  .page-header__top--opened
+    padding-bottom: 360px
+
+    .main-nav__list
+      top: 42px
+
+    .page-header__callback
+      display: flex
+      position: absolute
+      width: 100%
+      left: 0
+      bottom: 0
+      margin-right: 0
+      padding-left: 16px
+      padding-bottom: 16px
+      background: #3e434a
+      border-top: 1px solid #5c606d
+
+    .page-header__callback-toggle
+      display: none
+
+
+
+
+
+

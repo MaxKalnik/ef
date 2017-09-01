@@ -102,6 +102,38 @@ body
   align-items: flex-end
   padding-top: 16px
 
+.page-header__callback-toggle
+  display: none
+  position: relative
+  width: 24px
+  height: 24px
+  &:before
+    content: ''
+    position: absolute
+    top: 4px
+    left: 5px
+    width: 14px
+    height: 14px
+    background: url('images/phone-icon.svg') center no-repeat
+    background-size: cover
+    cursor: pointer
+
+.page-header__callback-close
+  display: none
+  position: relative
+  width: 24px
+  height: 24px
+  &:before
+    content: ''
+    position: absolute
+    top: 6px
+    left: 6px
+    width: 12px
+    height: 12px
+    background: url('images/close-icon.svg') center no-repeat
+    background-size: cover
+    cursor: pointer
+
 .page-header__callback-num
   margin-right: 16px
 
@@ -453,6 +485,9 @@ body
     color: #484a4d
     border-right: none
 
+    br
+      display: none
+
   .column-cell
     text-align: left
     border-left: 1px solid #d8e9f2
@@ -793,3 +828,52 @@ body
   line-height: 10px
   position: relative
   top: 4px
+
+
+.popup-free
+  width: 1136px
+  height: 228px
+  padding: 32px 55px 64px 104px
+  margin: 0 auto
+  background: linear-gradient(to bottom, #202432, #202432), linear-gradient(to bottom, #ffffff, #ffffff)
+  background-size: 100% 228px, 100% 335px
+
+.section__title--popup-free
+  color: #ffffff
+  &:before
+    background: url('images/pointer-white.svg') center no-repeat
+    backgrounf-size: cover
+
+  &:after
+    background: #ffffff
+
+.primary-text--popup-free
+  color: #ffffff
+  &:before
+    background: #ffffff
+
+.section__sub-title--popup-free
+  display: none
+  padding-top: 32px
+  &:before
+    top: auto
+    bottom: 8px
+
+  &:after
+    height: calc(100% - 18px)
+
+fieldset
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  outline: none
+  border: none
+  padding: 0
+  margin: 0
+
+input
+  display: inline-block
+  width: 30%
+
+input[type="tel"]
+  width: 40%
