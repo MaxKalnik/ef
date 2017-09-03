@@ -11,6 +11,9 @@ body
   padding: 0 152px 0 152px
   background: url('images/header-bg.png') center no-repeat
   background-size: cover
+  +respond-to-retina
+    background: url('images/header-bg@2x.png') center no-repeat
+    background-size: cover
 
   &--home
     min-height: 528px
@@ -143,6 +146,7 @@ body
   line-height: 16px
   font-weight: 700
   color: #50cfe3
+  text-transform: uppercase
 
 .page-header__callback-lower
   display: block
@@ -178,6 +182,7 @@ body
   line-height: 32px
   color: #e0fcff
   text-align: center
+  margin-bottom: 64px
 
 .section--top-offers
   position: relative
@@ -338,7 +343,6 @@ body
   background: #ffffff
   box-shadow: 0 10px 24px 0 rgba(15,71,77,0.16)
   border-radius: 6px
-  z-index: 5
 
   &--home
     top: -100px
@@ -417,6 +421,7 @@ body
   text-transform: uppercase
   padding: 12px 33px
   margin-right: 49px
+  cursor: pointer
 
 .section__btn-quote
   font-size: 12px
@@ -427,6 +432,7 @@ body
   text-transform: uppercase
   padding: 10px 47px
   border-radius: 30px
+  cursor: pointer
 
 .section--compare
   margin-bottom: 96px
@@ -530,7 +536,6 @@ body
   .column-cell
     border-right: 1px solid #d8e9f2
 
-
 .section--clients
   position: relative
   padding: 78px 149px 82px 642px
@@ -547,7 +552,7 @@ body
   &:before
     width: 16px
     height: 16px
-    left: 2px
+    left: 1px
     top: 15px
     background: url('images/heart.svg') center no-repeat
 
@@ -555,11 +560,7 @@ body
     height: 117px
     background: white
 
-.section__comments
-  position: relative
-
 .section__slide-item--first
-  position: relative
   opacity: 1
   transition: .5s ease-in
   &:hover
@@ -582,8 +583,6 @@ body
   bottom: -118px
   width: 440px
   height: 599px
-  background: url('images/man.png') center no-repeat
-  background-size: cover
 
 .section__sub-title--clients
   margin-bottom: 0
@@ -809,7 +808,7 @@ body
 .page-footer__text
   font-size: 10px
   line-height: 16px
-  font-weight: 400px
+  font-weight: 400
   color: #9198ad
 
 .page-footer__text--info
@@ -829,31 +828,45 @@ body
   position: relative
   top: 4px
 
-
 .popup-free
+  position: relative
   width: 1136px
-  height: 228px
-  padding: 32px 55px 64px 104px
+  height: 563px
+  padding: 32px 55px 64px 64px
   margin: 0 auto
-  background: linear-gradient(to bottom, #202432, #202432), linear-gradient(to bottom, #ffffff, #ffffff)
+  box-sizing: border-box
+  border-radius: 3px
+
+  background: linear-gradient(to top, #202432 0%, #202432 100%) top no-repeat,linear-gradient(to top, #ffffff 0%, #ffffff 100%) bottom no-repeat
   background-size: 100% 228px, 100% 335px
 
-.section__title--popup-free
+.popup__close
+  position: absolute
+  top: 16px
+  right: 16px
+  width: 24px
+  height: 24px
+  background: url('images/popup-close.svg') center no-repeat
+  background-size: cover
+  cursor: pointer
+
+.section__title--popup
   color: #ffffff
+  padding-bottom: 16px
   &:before
     background: url('images/pointer-white.svg') center no-repeat
-    backgrounf-size: cover
+    background-size: cover
 
   &:after
     background: #ffffff
 
-.primary-text--popup-free
-  color: #ffffff
+.primary-text--popup
+  color: #9198ad
+  padding-bottom: 20px
   &:before
     background: #ffffff
 
-.section__sub-title--popup-free
-  display: none
+.section__sub-title--popup
   padding-top: 32px
   &:before
     top: auto
@@ -862,18 +875,427 @@ body
   &:after
     height: calc(100% - 18px)
 
-fieldset
+.popup-form
   display: flex
   flex-direction: row
-  flex-wrap: wrap
   outline: none
   border: none
   padding: 0
   margin: 0
+  padding-left: 40px
+  font-size: 0
+  margin-bottom: 32px
 
-input
-  display: inline-block
+  input
+    width: 100%
+    font-size: 14px
+    line-height: 16px
+    color: #797f92
+    font-weight: 400
+    padding: 32px 16px 16px 16px
+    box-sizing: border-box
+    margin: 0
+    border: 1px solid #dbdbdb
+    border-right: none
+    box-shadow: inset 0 1px 4px 0 rgba(191,184,176,0.33)
+
+  input[type="tel"]
+    width: 100%
+    padding-right: 34px
+    border-right: 1px solid #dbdbdb
+
+input:focus
+  outline: none
+
+.popup__select
+  width: 35px
+  position: absolute
+  top: 32px
+  right: 16px
+  cursor: pointer
+  &:before
+    content: ''
+    position: absolute
+    width: 9px
+    height: 6px
+    right: 0
+    top: 5px
+    background: url('images/arrow-down.svg')
+
+.popup__select-item
+  font-size: 14px
+  line-height: 16px
+  color: #797f92
+  font-weight: 400
+
+.popup__name-wrapper
   width: 30%
+  position: relative
 
-input[type="tel"]
-  width: 40%
+.popup__email-wrapper
+  width: 30%
+  position: relative
+
+.popup__phone-wrapper
+  width: 39%
+  position: relative
+
+.popup__label
+  position: absolute
+  left: 16px
+  top: 12px
+  font-size: 10px
+  line-height: 16px
+  font-weight: 600
+  text-transform: uppercase
+  color: #2d3539
+
+.popup__btn-quote
+  display: inline-block
+  padding: 12px 32px
+  margin-bottom: 24px
+  color: #ffffff
+  background: #fc5245
+  text-transform: uppercase
+  border-radius: 30px
+  font-size: 12px
+  line-height: 16px
+  font-weight: 600
+  color: #ffffff
+  margin-left: 40px
+  cursor: pointer
+
+.blur
+  visibility: hidden
+  display: block
+  position: fixed
+  width: 100vw
+  height: 100vh
+  background: rgba(0,0,0,.7)
+  z-index: 5
+  top: 0
+
+.blur-visible
+  visibility: visible
+
+.popup-free__privacy-text
+  margin-left: 40px
+  font-size: 12px
+  line-height: 16px
+  font-weight: 400
+  color: #a9abbe
+  a
+    color: #65a1d0
+
+.popup-fast
+  position: relative
+  width: 748px
+  height: 452px
+  padding: 32px 55px 64px 64px
+  margin: 0 auto
+  box-sizing: border-box
+  border-radius: 3px
+
+  background: linear-gradient(to top, #202432 0%, #202432 100%) top no-repeat,linear-gradient(to top, #ffffff 0%, #ffffff 100%) bottom no-repeat
+  background-size: 100% 172px, 100% 280px
+
+  .primary-text--popup
+    padding-bottom: 28px
+
+  .section__sub-title--popup
+    padding-top: 24px
+
+  input[type="tel"]
+    width: 310px
+
+  .popup__select
+    right: -60px
+
+.popup-thank-you
+  position: relative
+  width: 1136px
+  height: 328px
+  padding: 64px
+  box-sizing: border-box
+  background: url('images/popup-bg.png') center no-repeat
+  background-size: cover
+  margin: 0 auto
+
+.popup-thank-you__close
+  position: absolute
+  top: 16px
+  right: 16px
+  width: 24px
+  height: 24px
+  background: url('images/popup-close.svg') center no-repeat
+  background-size: cover
+  cursor: pointer
+
+.popup__call
+  position: absolute
+  top: 64px
+  right: 64px
+  display: inline-block
+  padding: 40px 32px
+  background: #ffffff
+  box-shadow: 0 -2px 21px 0 rgba(41,190,204,0.16)
+  border-radius: 3px
+
+.popup__call-text
+  font-size: 16px
+  line-height: 24px
+  font-weight: 400
+  color: #484a4d
+  margin-bottom: 24px
+
+.primary-text--popup-tnx
+  width: 478px
+  color: #ffffff
+  &:before
+    background: #ffffff
+
+.popup__call-num
+  font-size: 48px
+  line-height: 48px
+  font-weight: 700
+  color: #fb5f43
+
+.section__title--popup-tnx
+  color: #ffffff
+  padding-bottom: 16px
+  &:before
+    background: url('images/pointer-white.svg')
+
+  &:after
+    background: #ffffff
+
+.popup__btn-container
+  position: relative
+  padding-left: 46px
+
+.popup__btn-close
+  display: inline-block
+  font-size: 12px
+  line-height: 16px
+  font-weight: 600
+  text-transform: uppercase
+  color: #ffffff
+  background: #fc5245
+  border-radius: 30px
+  padding: 12px 50px
+  &:before
+    content: ''
+    width: 7px
+    height: 7px
+    position: absolute
+    left: 5px
+    top: 16px
+    background: url('images/oval-white.svg') center no-repeat
+
+  &:after
+    content: ''
+    width: 1px
+    height: 12px
+    position: absolute
+    left: 8px
+    top: 0
+    background: #ffffff
+
+.search-form
+  padding-left: 88px
+  padding-right: 88px
+  form
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    outline: none
+    border: none
+    padding: 0
+    margin: 0
+
+  input
+    width: 100%
+    font-size: 14px
+    line-height: 16px
+    color: #797f92
+    font-weight: 400
+    padding: 32px 16px 16px 16px
+    box-sizing: border-box
+    margin: 0
+    border: 1px solid #dbdbdb
+    border-right: none
+    box-shadow: inset 0 1px 4px 0 rgba(191,184,176,0.33)
+
+  .search-form__label
+    color: #7c8295
+
+.search-form__wrapper
+  position: relative
+
+.search-form__label
+  position: absolute
+  left: 16px
+  top: 12px
+  font-size: 10px
+  line-height: 16px
+  font-weight: 600
+  text-transform: uppercase
+  color: #2d3539
+
+.search-form__btn-container
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  order: 5
+  margin-top: 16px
+
+.search-form__btn
+  display: block
+  font-size: 12px
+  line-height: 16px
+  font-weight: 700
+  color: #979ea6
+  text-transform: uppercase
+  cursor: pointer
+
+.search-form__btn--roundtrip
+  margin-right: 16px
+
+.search-form__btn--active
+  color: #50cfe3
+  border-bottom: 1px solid #50cfe3
+
+.search-form__wrapper--dropdown
+  &:before
+    content: ''
+    position: absolute
+    width: 9px
+    height: 6px
+    right: 16px
+    top: 38px
+    background: url('images/arrow-down.svg')
+    cursor: pointer
+
+.search-form__wrapper--sumbit
+  .search-form__submit-btn
+    font-size: 12px
+    line-height: 16px
+    font-weight: 700
+    color: #ffffff
+    background: #fb5f43
+    padding: 26px 24px 24px 24px
+    border: none
+    cursor: pointer
+
+
+.search-form__wrapper--from
+  width: 21%
+  input
+    border-radius: 3px 0 0 3px
+
+.search-form__wrapper--to
+  width: 19%
+
+.search-form__wrapper--date
+  width: 19%
+
+.search-form__wrapper--quantity
+  width: 9%
+
+.search-form__wrapper--class
+  width: 16%
+
+.search-form__wrapper--sumbit
+  width: 14%
+  input
+    border-radius: 0 3px 3px 0
+
+.page-header__fast-quote
+  display: none
+  padding-top: 14px
+  border-top: 1px solid #5a616d
+
+.fast-quote__title
+  font-size: 24px
+  line-height: 32px
+  font-weight: 700
+  color: #ffffff
+  padding: 0 16px
+  margin-bottom: 12px
+
+.popup-form--quote
+  padding: 0 16px
+
+.fast-quote__text
+  font-size: 14px
+  line-height: 24px
+  font-weight: 400
+  color: #9198ad
+  padding: 0 16px
+  margin-bottom: 16px
+
+.fast-quote__sub-title
+  font-size: 14px
+  line-height: 24px
+  font-weight: 600
+  color: #ffffff
+  text-transform: uppercase
+  padding: 0 16px
+  margin-bottom:  14px
+
+.fast-quote__btn-container
+  padding: 12px 0
+  text-align: center
+  background: #3c434a
+  border-top: 1px solid #5a616d
+
+.fast-quote__btn
+  display: inline-block
+  font-size: 12px
+  line-height: 16px
+  font-weight: 600
+  color: #ffffff
+  padding: 12px 32px
+  background: #fc5245
+  border-radius: 30px
+  text-transform: uppercase
+  cursor: pointer
+
+.section__btn-see
+  &:hover
+    box-shadow: 0 1px 11px 0 rgba(241,68,55,0.51)
+
+.popup__btn-quote
+  &:hover
+    box-shadow: 0 1px 11px 0 rgba(241,68,55,0.51)
+
+.input-warning
+  &:before
+    content: ''
+    position: absolute
+    top: 8px
+    right: 8px
+    width: 14px
+    height: 14px
+    background: url('images/warning.svg')
+
+  input
+    border: 1px solid #ff001f
+
+  .search-form__label
+    color: #ff001f
+
+
+.popup-fast,
+.popup-free,
+.popup-thank-you
+  display: none
+
+.popup-show
+  display: block
+  position: fixed
+  top: 40px
+  left: 50%
+  transform: translateX(-50%)
+  z-index: 10
+

@@ -47,10 +47,58 @@
           </div>
           <a class="page-header__callback-button">Request callback</a>
         </div>
+        <div class="page-header__fast-quote">
+          <h2 class="fast-quote__title">Need a Fast Quote?</h2>
+          <p class="fast-quote__text">Get a call from the travel expert and free advice within minutes.</p>
+          <h3 class="fast-quote__sub-title">ENTER YOUR PHONE NUMBER</h3>
+          <form action="" method="" class="popup-form popup-form--quote">
+            <div class="popup__phone-wrapper popup__phone-wrapper--quote input-wrapper">
+              <input type="tel" name="phone" placeholder="Enter your number">
+              <span class="popup__label">Phone<sup class="reg">*</sup></span>
+              <div class="popup__select">
+                <div class="popup__select-item">US</div>
+              </div>
+            </div>
+          </form>
+          <div class="fast-quote__btn-container">
+            <a class="fast-quote__btn">Get a free quote</a>
+          </div>
+        </div>
       </div>
     </div>
     <h1 class="main-title">Fly business and first class for less</h1>
     <p class="page-header__text"><strong>Get up to 58%* OFF on Business and First Class Flights with Expert Fares</strong></p>
+    <div class="search-form">
+      <form action="" method="">
+        <div class="search-form__wrapper search-form__wrapper--from input-wrapper">
+          <input type="text" name="name" id="name" value="New York — All Airports">
+          <span class="search-form__label">From</span>
+        </div>
+        <div class="search-form__wrapper search-form__wrapper--to input-wrapper">
+          <input type="text" name="email" placeholder="Enter Destination">
+          <span class="search-form__label">To</span>
+        </div>
+        <div class="search-form__wrapper search-form__wrapper--date search-form__wrapper--dropdown input-wrapper">
+          <input type="text" name="phone" value="22 July — 29 March">
+          <span class="search-form__label">Date</span>
+        </div>
+        <div class="search-form__wrapper search-form__wrapper--quantity search-form__wrapper--dropdown input-wrapper">
+          <input type="tel" name="phone" value="2">
+          <span class="search-form__label">Quantity</span>
+        </div>
+        <div class="search-form__wrapper search-form__wrapper--class search-form__wrapper--dropdown input-wrapper">
+          <input type="tel" name="phone" placeholder="Business Class">
+          <span class="search-form__label">Class</span>
+        </div>
+        <div class="search-form__btn-container">
+          <a class="search-form__btn search-form__btn--roundtrip search-form__btn--active">Round Trip</a>
+          <a class="search-form__btn search-form__btn--oneway">One way</a>
+        </div>
+        <div class="search-form__wrapper search-form__wrapper--sumbit">
+          <input type="submit" value="GET A QUOTE" class="search-form__submit-btn">
+        </div>
+      </form>
+    </div>
   </header>
   <main class="page-content">
     <div class="wrapper">
@@ -164,17 +212,26 @@
           <li class="section__slide-item section__slide-item--first">
             <h3 class="section__sub-title section__sub-title--clients">John</h3>
             <div class="section__comments-text section__comments-text--limited">“It was made easy booking, especially at the last meeting and both to and from flights were pleasant and hitch free.”</div>
-            <img class="section__comments-img" src="images/man.png" srcset="images/man@2x.png 2x">
+            <picture>
+              <source srcset="images/man-320.png, images/man-320@2x.png 2x" media="(max-width: 767px)">
+              <img class="section__comments-img" srcset="images/man.png, images/man@2x.png 2x">
+            </picture>
           </li>
           <li class="section__slide-item section__slide-item--second">
             <h3 class="section__sub-title section__sub-title--clients">John</h3>
             <div class="section__comments-text section__comments-text--limited">“It was made easy booking, especially at the last meeting and both to and from flights were pleasant and hitch free.”</div>
-            <img class="section__comments-img" src="images/man.png" srcset="images/man@2x.png 2x">
+            <picture>
+              <source srcset="images/man-320.png, images/man-320@2x.png 2x" media="(max-width: 767px)">
+              <img class="section__comments-img" src="images/man.png" srcset="images/man@2x.png 2x">
+            </picture>
           </li>
           <li class="section__slide-item section__slide-item--third">
             <h3 class="section__sub-title section__sub-title--clients">John</h3>
             <div class="section__comments-text section__comments-text--limited">“It was made easy booking, especially at the last meeting and both to and from flights were pleasant and hitch free.”</div>
-            <img class="section__comments-img" src="images/man.png" srcset="images/man@2x.png 2x">
+            <picture>
+              <source srcset="images/man-320.png, images/man-320@2x.png 2x" media="(max-width: 767px)">
+              <img class="section__comments-img" src="images/man.png" srcset="images/man@2x.png 2x">
+            </picture>
           </li>
         </ul>
       </div>
@@ -214,7 +271,7 @@
     <h2 class="page-footer__title">Ready for your next luxury flight?</h2>
     <div class="section__btn-container section__btn-container--footer">
       <a class="section__btn-see">see more offers</a>
-      <a class="section__btn-quote">get a quote</a>
+      <a class="section__btn-quote section__btn-quote--white">get a quote</a>
     </div>
     <div class="page-footer__links">
       <div class="page-footer__nav">
@@ -263,18 +320,64 @@
     </div>
   </footer>
   <div class="popup-free">
-    <h2 class="section__title section__title--popup-free">Get a Free Quote</h2>
-        <p class="primary-text primary-text--popup-free">Our exclusive contacts with the airlines do not allow us to show the details of our discount fares, including flight itineraries and airline brand. Just complete the request form below and one of our experts will get in touch with you with the best itinerary and price options for your flight.</p>
-        <h3 class="section__sub-title section__sub-title--popup-free">SUBMIT REQUEST NOW</h3>
+    <h2 class="section__title section__title--popup">Get a Free Quote</h2>
+        <p class="primary-text primary-text--popup">Our exclusive contacts with the airlines do not allow us to show the details of our discount fares, including flight itineraries and airline brand. Just complete the request form below and one of our experts will get in touch with you with the best itinerary and price options for your flight.</p>
+        <h3 class="section__sub-title section__sub-title--popup">SUBMIT REQUEST NOW</h3>
 
-        <fieldset>
-          <input type="text" name="name">
-          <input type="email" name="email">
-          <input type="tel" name="phone">
-        </fieldset>
+        <form action="" method="" class="popup-form">
+          <div class="popup__name-wrapper input-wrapper">
+            <input type="text" name="name" id="name" placeholder="Enter your name">
+            <span class="popup__label">Name<sup class="reg">*</sup></span>
+          </div>
+          <div class="popup__email-wrapper input-wrapper">
+            <input type="email" name="email" placeholder="Enter your email">
+            <span class="popup__label">Email<sup class="reg">*</sup></span>
+          </div>
+          <div class="popup__phone-wrapper input-wrapper">
+            <input type="tel" name="phone" placeholder="Enter your number">
+            <span class="popup__label">Phone<sup class="reg">*</sup></span>
+            <div class="popup__select">
+              <div class="popup__select-item">US</div>
+            </div>
+          </div>
+        </form>
+        <a class="popup__btn-quote">get a free quote</a>
+        <p class="popup-free__privacy-text"><sup class="reg">*</sup>By providing my contact details I agree to be contacted for travel information via phone, text messages and email. No purchase necessary. We respect your <a href="#">privacy</a>.</p>
+        <div class="popup__close popup__close--free"></div>
   </div>
-  <div class="popup-fast"></div>
-  <div class="popup-thank-you"></div>
+  <div class="popup-fast">
+    <h2 class="section__title section__title--popup">Need a Fast Quote?</h2>
+    <p class="primary-text primary-text--popup">Get a call from the travel expert and free advice within minutes.</p>
+    <h3 class="section__sub-title section__sub-title--popup">ENTER YOUR PHONE NUMBER</h3>
+
+    <form action="" method="" class="popup-form">
+      <div class="popup__phone-wrapper input-wrapper">
+        <input type="tel" name="phone" placeholder="Enter your number">
+        <span class="popup__label">Phone<sup class="reg">*</sup></span>
+        <div class="popup__select">
+          <div class="popup__select-item">US</div>
+        </div>
+      </div>
+    </form>
+    <a class="popup__btn-quote">get a free quote</a>
+    <div class="popup__close popup__close--fast"></div>
+  </div>
+  <div class="popup-thank-you">
+    <div class="popup-thank-you__close"></div>
+    <h2 class="section__title section__title--popup-tnx">Thank You!</h2>
+    <p class="primary-text primary-text--popup-tnx">Thank you. Your request has been sent. Our expert will be in touch with you shortly.</p>
+    <div class="popup__btn-container">
+      <a class="popup__btn-close">Close</a>
+    </div>
+    <div class="popup__call">
+      <p class="popup__call-text">
+        Need Instant Help?<br>
+        Call for a Deal Right Now
+      </p>
+      <a href="tel:866.456.33.22" class="popup__call-num">866.456.33.22</a>
+    </div>
+  </div>
+  <div class="blur"></div>
 <script src="js/script.min.js"></script>
 </body>
 </html>
