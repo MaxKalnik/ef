@@ -173,8 +173,8 @@
     padding-bottom: 295px
     background: #2d3539
     z-index: 5
-    & + main-title
-      margin-bottom: 100px
+    & + .main-title
+      margin-bottom: 116px
 
   .page-header__callback
     margin-right: 40px
@@ -373,8 +373,6 @@
 
     .popup__email-wrapper
       width: 50%
-      input
-        border-right: 1px solid #dbdbdb
 
     .popup__phone-wrapper
       width: 100%
@@ -696,6 +694,10 @@
   .page-header__top--opened
     padding-bottom: 360px
 
+    & + .main-title
+      margin-bottom: 99px
+
+
     .main-nav__list
       top: 42px
 
@@ -777,6 +779,9 @@
     .page-header__toggle-btn
       visibility: hidden
 
+    & + .main-title
+      margin-bottom: 99px
+
   .page-header__callback-container--opened
     .page-header__callback-toggle
       visibility: hidden
@@ -827,8 +832,9 @@
     .popup__name-wrapper
       width: 100%
       margin-bottom: 16px
-      input
-        border-right: 1px solid #dbdbdb
+
+    .popup-form
+      padding-left: 0
 
     .popup__email-wrapper
       width: 100%
@@ -864,6 +870,9 @@
     width: 288px
     height: 395px
     padding: 24px 16px
+
+    .popup-form
+      padding-left: 0
 
     .primary-text--popup
       padding-bottom: 16px
@@ -912,4 +921,7 @@
     line-height: 24px
     padding-bottom: 174px
 
-
+  .popup-show
+    display: block
+    position: absolute
+    top: 40px
