@@ -434,9 +434,6 @@ body
   border-radius: 30px
   cursor: pointer
 
-.section--compare
-  margin-bottom: 96px
-
 .section__title--compare
   &:before
     width: 16px
@@ -536,19 +533,43 @@ body
   .column-cell
     border-right: 1px solid #d8e9f2
 
+.section-container
+  position: relative
+  width: 1140px
+  margin: 0 auto
+
 .section--clients
   position: relative
-  padding: 78px 149px 82px 642px
-  background: url('images/clients-bg.png') center no-repeat
-  background-size: cover
+  padding: 0 149px 0 149px
+  background: url('images/clients-bg.png') bottom no-repeat
+  background-size: 100% 440px
   margin-bottom: 36px
+  min-height: 600px
 
   height: 440px
   box-sizing: border-box
 
+.section__comments
+  width: 100%
+  position: relative
+  overflow: hidden
+  user-select: none
+  margin: 0 auto
+
+.section__slide-list
+  width: calc(100% * 3)
+  display: flex
+  flex-direction: row
+  transition: 0.3s ease-in
+
 .section__title--clients
   width: 650px
   color: #ffffff
+
+  position: absolute
+  top: calc(78px + 160px)
+  right: 0
+
   &:before
     width: 16px
     height: 16px
@@ -561,7 +582,17 @@ body
     background: white
 
 .section__slide-item
+  width: calc(100% / 3)
   transition: .25s ease-in
+  display: flex
+  flex-direction: row
+  align-items: flex-end
+
+.section__comments-content
+  display: flex
+  flex-direction: column
+  margin-bottom: 90px
+  margin-left: 10px
 
 .section__slide-item--first
   opacity: 1
@@ -570,20 +601,12 @@ body
     opacity: 1
 
 .section__slide-item--second
-  position: absolute
-  opacity: 0
   top: 0
 
 .section__slide-item--third
-  position: absolute
-  opacity: 0
   top: 0
 
 .section__comments-img
-  content: ''
-  position: absolute
-  left: -515px
-  bottom: -118px
   width: 440px
   height: 599px
 
@@ -602,8 +625,10 @@ body
     display: none
 
 .slider-controls
+  position: absolute
+  bottom: 82px
+  right: 555px
   font-size: 0
-  margin-left: 40px
   line-height: 16px
 
 .section__comments-text
@@ -614,19 +639,23 @@ body
   margin: 16px 0 24px 40px
 
   &--limited
-    width: 652px
+    width: 630px
 
-.slider__arrow-left
+.slide__left
   display: inline-block
   font-size: inherit
   opacity: 0.7
   margin-right: 16px
   cursor: pointer
 
-.slider__arrow-right
+.slide__right
   display: inline-block
   margin-left: 16px
   cursor: pointer
+  opacity: 0.7
+
+.slide--active
+  opacity: 1
 
 .slide__pointer
   display: inline-block
@@ -638,6 +667,10 @@ body
   margin-right: 8px
   opacity: 0.7
   cursor: pointer
+
+.slide__pointer--active
+  transform: scaleX(1.1)
+  opacity: 1
 
 .slide__pointer--3
   margin-right: 0

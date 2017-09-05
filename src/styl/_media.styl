@@ -50,10 +50,18 @@
     margin-left: 34px
 
   .section--clients
-    padding: 72px 40px 72px 458px
+    padding: 0 40px 0 40px
+
+  .section-container
+    width: 944px
 
   .section__title--clients
     width: 464px
+    top: 232px
+
+  .section__comments-content
+    margin-bottom: 78px
+    margin-left: 5px
 
   .section__comments-img
     left: -457px
@@ -65,12 +73,12 @@
 
   .section__comments-text
     margin: 16px 0 24px 34px
-
-  .section__comments-text--limited
-    width: 464px
+    &--limited
+      width: 460px
 
   .slider-controls
-    margin-left: 34px
+    right: 369px
+    bottom: 74px
 
   .section__sub-title--clients
     margin-bottom: 0
@@ -242,8 +250,6 @@
   .section__comments-img
     width: 352px
     height: 480px
-    bottom: -72px
-    left: -370px
 
   .section__compare-table-container
     margin-bottom: 31px
@@ -275,15 +281,27 @@
   .section__compare-table-container
     margin-left: 29px
 
+  .section-container
+    width: 744px
+
   .section--clients
     height: auto
-    padding: 34px 24px 34px 358px
+    padding: 0 24px 0 0
     margin-right: 0
+    min-height: 478px
+    background-size: 100% 372px
 
   .section__title--clients
     font-size: 44px
     line-height: 48px
     padding-bottom: 16px
+
+  .section__title--clients
+    top: 142px
+    right: 80px
+
+  .section__comments-content
+    margin-bottom: 41px
 
   .section__title--clients-limited
     width: 277px
@@ -300,7 +318,8 @@
     left: 1px
 
   .slider-controls
-    margin-left: 29px
+    right: 262px
+    bottom: 32px
 
   .section__stats-list
     padding-left: 29px
@@ -544,7 +563,7 @@
     margin-bottom: 16px
 
   .section__compare-table-container
-    width: 288px
+    width: 90%
     margin-left: 0
     position: relative
     right: 16px
@@ -597,22 +616,37 @@
     margin-bottom: 16px
 
   .section--clients
-    margin-top: 265px
     margin-bottom: 0
-    padding: 32px 16px
+    padding: 0 16px
+    min-height: 616px
 
-  .section__comments-text
+  .section__slide-item
+    flex-direction: column
+    align-items: center
+
+  .section-container
+    width: 288px
+
+  .section__comments-content
+    margin-bottom: 16px
+    margin-left: 0
+    margin-top: 150px
+
+  .section__title--clients-limited
     width: 100%
-    margin: 8px 0 16px 0
+    top: 270px
+    left: 0
+
+  .section__comments-text--limited
+    width: 100%
+    margin: 0
 
   .section__comments-img
     width: 226px
     height: 246px
-    top: -246px
-    left: 50%
-    transform: translateX(-50%)
 
   .slider-controls
+    position: static
     margin-left: 0
 
   .section--stats
