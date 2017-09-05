@@ -93,6 +93,7 @@ $(document).ready(function () {
 
   var slideNow = 1;
   var slides = $('.section__slide-list').children();
+  var slidesArr = $('.section__slide-item').toArray();
   var slideCount = $('.section__slide-list').children().length;
   var slideInterval = 2000;
 
@@ -101,12 +102,13 @@ $(document).ready(function () {
       var slideNow = 1;
     }
     else {
-      $('.section__slide-item:eq(1)').css('opacity', '0');
-      $('.section__slide-item:eq(1)').css('opacity', '1');
-    }
-    slideNow++;
 
+    }
+
+    slideNow++;
   };
+
+  console.log(slidesArr);
 
   // setInterval(nextSlide, slideInterval);
 });
