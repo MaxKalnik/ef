@@ -1,0 +1,122 @@
+.page-header--offers
+  position: relative
+  background: url('images/offers/offers-header-bg.png') center no-repeat
+  background-size: cover
+  min-height: 376px
+
+.wrapper--offer
+  padding-top: 84px
+
+.region-switcher
+  position: absolute
+  bottom: -37px
+  left: 50%
+  transform: translateX(-50%)
+  padding: 0 90px 0 75px
+  background: #ffffff
+  box-shadow: 0 10px 24px 0 rgba(15,71,77,0.16)
+  border-radius: 3px
+
+.region-switcher__list
+  display: flex
+  flex-direction: row
+
+.region-switcher__item
+  margin-right: 20px
+  &:last-child
+    margin-right: 0
+
+.region-switcher__link
+  display: block
+  font-size: 14px
+  line-height: 24px
+  font-weight: 500
+  color: #797f92
+  padding: 29px 0 27px 15px
+  text-transform: uppercase
+
+.section--asia,
+.section--europe,
+.section--middle-east
+  margin-bottom: 96px
+
+.section--europe
+  position: relative
+
+.section__title--offer
+  &:before
+    content: '01'
+    color: #ff4b34
+    font-size: 16px
+    line-height: 16px
+    background: none
+
+.section__title--offer-europe
+  &:before
+    content: '02'
+
+.section__title--offer-middle-east
+  &:before
+    content: '03'
+
+.primary-texy--offer
+  padding-bottom: 56px
+
+.section__trip-list
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  padding-left: 40px
+
+.section__trip-item
+  width: calc(25% - 12px)
+  height: 72px
+  position: relative
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  padding: 16px 37px 32px 16px
+  box-sizing: border-box
+  box-shadow: 0 10px 24px 0 rgba(15,71,77,0.16)
+  border-radius: 4px
+  margin-bottom: 16px
+  margin-right: 16px
+  &:nth-child(4n)
+    margin-right: 0
+  &:before
+    content: ''
+    position: absolute
+    top: 25px
+    right: 16px
+    width: 11px
+    height: 7px
+    background: url('images/arrow-right.svg') center no-repeat
+    background-size: cover
+
+.section__trip-text
+  font-size: 16px
+  line-height: 24px
+  color: #484a4d
+  font-weight: 400
+
+.section__trip-price
+  font-size: 18px
+  line-height: 24px
+  color: #29a5d0
+  font-weight: 900
+  .reg
+    font-size: 18px
+    color: #29a5d0
+
+.trip-switcher__btn
+  font-size: 16px
+  line-height: 24px
+  color: #29a5d0
+  font-weight: 600
+  text-transform: uppercase
+  cursor: pointer
+
+.trip-switcher__btn--active
+  color: #65a1d0
+
+

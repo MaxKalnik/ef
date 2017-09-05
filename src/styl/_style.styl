@@ -560,6 +560,9 @@ body
     height: 117px
     background: white
 
+.section__slide-item
+  transition: .25s ease-in
+
 .section__slide-item--first
   opacity: 1
   transition: .5s ease-in
@@ -568,12 +571,12 @@ body
 
 .section__slide-item--second
   position: absolute
-  display: none
+  opacity: 0
   top: 0
 
 .section__slide-item--third
   position: absolute
-  display: none
+  opacity: 0
   top: 0
 
 .section__comments-img
@@ -1300,7 +1303,6 @@ input:focus
 
   .search-form__label
     color: #ff001f
-
 
 .popup-fast,
 .popup-free,
