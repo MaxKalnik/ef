@@ -167,11 +167,12 @@ $(document).ready(function () {
     }
   });
 
-  $('.section__comments').hover(function(){
-        clearInterval(switchInterval);
-    },function() {
-        switchInterval = setInterval(nextSlide, slideInterval);
-    });
+//temporary unable slider
+  // $('.section__comments').hover(function(){
+  //       clearInterval(switchInterval);
+  //   },function() {
+  //       switchInterval = setInterval(nextSlide, slideInterval);
+  //   });
 
   body.on('click', '.trip-switcher__toggle--first', function () {
       $(this).siblings().removeClass('trip-switcher__toggle--active');

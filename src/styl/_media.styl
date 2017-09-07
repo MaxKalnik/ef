@@ -8,6 +8,10 @@
     &:nth-child(4n)
       margin-right: 0
 
+  .section__title--clients
+    &:after
+      top: 38px
+
 @media (max-width: 1439px)
   .page-header
     padding: 0 40px 0 40px
@@ -77,8 +81,10 @@
 
   .section__comments-text
     margin: 16px 0 24px 34px
+
     &--limited
       width: 460px
+      height: 72px
 
   .slider-controls
     right: 369px
@@ -203,6 +209,7 @@
     padding-left: 75px
 
   .main-nav__link--active
+    margin-left: 0
     &:before
       left: 61px
 
@@ -635,17 +642,19 @@
     margin-bottom: 48px
 
   .section-top-offers__call
+    width: 100%
     padding: 16px 16px 24px 16px
     bottom: 0
     right: 50%
     transform :translateX(50%)
     top: auto
+    text-align: center
 
   .section-top-offers__call-text
     margin-bottom: 16px
 
   .section__compare-table-container
-    width: 90%
+    width: 100%
     margin-left: 0
     position: relative
     right: 16px
@@ -722,6 +731,7 @@
   .section__comments-text--limited
     width: 100%
     margin: 0
+    height: auto
 
   .section__comments-img
     width: 226px

@@ -74,6 +74,7 @@ body
 .main-nav__link--active
   color: #ffffff
   font-weight: 500
+  margin-left: 16px
   &:before
     content: ''
     height: 7px
@@ -631,6 +632,8 @@ body
   font-size: 0
   line-height: 16px
 
+  display: none
+
 .section__comments-text
   font-size: 18px
   line-height: 24px
@@ -640,6 +643,8 @@ body
 
   &--limited
     width: 630px
+    max-height: 72px
+    text-overflow: ellipsis
 
 .slide__left
   display: inline-block
