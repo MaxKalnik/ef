@@ -4,6 +4,10 @@
     .section__comments-img
       bottom: -98px
 
+  .section__trip-item
+    &:nth-child(4n)
+      margin-right: 0
+
 @media (max-width: 1439px)
   .page-header
     padding: 0 40px 0 40px
@@ -119,6 +123,51 @@
   .primary-text--popup-tnx
     width: 318px
 
+  .page-header--offers
+    .main-title
+      padding: 0 45px
+
+  .section__call
+    position: static
+    text-align: center
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    align-items: center
+    align-content: center
+    justify-content: center
+
+    .section-top-offers__call-button
+      display: inline-block
+
+  .section__call-text
+    margin-bottom: 0
+
+  .section__call-num
+    margin: 0
+    margin-right: 16px
+
+  .section__call-text--full
+    width: 100%
+    margin-bottom: 22px
+    br
+      display: none
+
+  .section-top-offers__call-button
+    margin: 0
+    margin-left: 16px
+
+  .section__trip-item
+    width: calc(33.3% - 12px)
+
+    &:nth-child(3n)
+      margin-right: 0
+
+  .section--asia,
+  .section--europe,
+  .section--middle-east
+    margin-bottom: 64px
+
 @media (min-width: 1023px) and (max-width: 1439px)
   .section__slide-item--second,
   .section__slide-item--third
@@ -197,7 +246,7 @@
       margin-bottom: 116px
 
   .page-header__callback
-    margin-right: 40px
+    margin-right: 24px
 
   .section__title
     font-size: 24px
@@ -466,6 +515,39 @@
     margin-bottom: 16px
     br
       display: none
+
+  .section--asia,
+  .section--europe,
+  .section--middle-east
+    margin-bottom: 48px
+
+
+  .page-header--offers
+    min-height: 276px
+
+  .region-switcher
+    padding: 0 75px 0 60px
+
+  .region-switcher__link
+    padding-top: 24px
+    padding-bottom: 24px
+
+  .region-switcher__link--active
+    &:before
+      top: 32px
+
+    &:after
+      height: calc(100% - 44px)
+
+  .primary-texy--offer
+    width: 424px
+    padding-bottom: 24px
+
+  .section__trip-list
+    padding-left: 29px
+
+  .trip-switcher
+    top: 130px
 
 @media (min-width: 767px)
   .section__comments
@@ -971,3 +1053,101 @@
     display: block
     position: absolute
     top: 40px
+
+  .page-header--offers
+    min-height: 240px
+    .main-title
+      padding: 0
+
+  .wrapper--offer
+    padding-top: 56px
+
+  .section__sub-title--offer
+    padding-top: 0
+    margin-bottom: 24px
+
+  .region-switcher
+    min-width: 288px
+    width: 90%
+    padding: 0
+
+  .region-switcher__list
+    flex-direction: column
+    &:after
+      content: ''
+      position: absolute
+      width: 9px
+      height: 6px
+      top: 21px
+      right: 16px
+      background: url('images/offers/arrow-down.svg') center no-repeat
+      background-size: cover
+
+  .section__trip-list
+    padding-left: 0
+    flex-direction: column
+
+  .region-switcher__item
+    margin-right: 0
+
+  .region-switcher__link:not(.region-switcher__link--active)
+    display: none
+
+  .region-switcher__link
+    line-height: 16px
+    padding: 16px 0 16px 42px
+    display: block
+
+  .region-switcher__link--active
+    &:before
+      left: 20px
+      top: 20px
+
+    &:after
+      width: 16px
+      height: 1px
+      top: 23px
+      left: 0
+
+  .trip-switcher
+    position: static
+    margin-bottom: 16px
+
+  .section__trip-item
+    width: 100%
+    height: auto
+    margin-right: 0
+    flex-direction: column
+    padding: 12px 16px
+    &:before
+      display: none
+
+  .section__trip-text
+    margin-bottom: 7px
+
+  .section__trip-price
+    position: relative
+    display: inline-block
+    padding-right: 15px
+    &:after
+      content: ''
+      display: inline-block
+      position: relative
+      width: 11px
+      height: 7px
+      margin-left: 4px
+      bottom: 2px
+      background: url('images/arrow-right.svg') center no-repeat
+      background-size: cover
+
+  .section__call
+    flex-direction: column
+    padding: 16px 16px 24px 16px
+
+  .section__call-num
+    margin-right: 0
+    margin-bottom: 8px
+
+  .section-top-offers__call-button
+    margin-top: 16px
+    margin-left: 0

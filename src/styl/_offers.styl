@@ -9,6 +9,7 @@
 
 .region-switcher
   position: absolute
+  min-width: 582px
   bottom: -37px
   left: 50%
   transform: translateX(-50%)
@@ -27,20 +28,46 @@
     margin-right: 0
 
 .region-switcher__link
-  display: block
+  display: inline-block
+  position: relative
   font-size: 14px
   line-height: 24px
   font-weight: 500
   color: #797f92
   padding: 29px 0 27px 15px
   text-transform: uppercase
+  word-wrap: normal
+
+.region-switcher__link--active
+  color: #29a5d0
+  &:before
+    content: ''
+    position: absolute
+    width: 7px
+    height: 7px
+    top: 36px
+    left: 0
+    background: url('images/offers/oval-blue.svg') center no-repeat
+    background-size: cover
+
+  &:after
+    content: ''
+    position: absolute
+    width: 1px
+    height: calc(100% - 48px)
+    top: 0
+    left: 3px
+    background: #29a5d0
 
 .section--asia,
 .section--europe,
 .section--middle-east
   margin-bottom: 96px
 
-.section--europe
+.section--asia
+  margin-bottom: 80px
+
+.section
   position: relative
 
 .section__title--offer
@@ -50,6 +77,7 @@
     font-size: 16px
     line-height: 16px
     background: none
+    font-weight: 600
 
 .section__title--offer-europe
   &:before
@@ -81,8 +109,7 @@
   border-radius: 4px
   margin-bottom: 16px
   margin-right: 16px
-  &:nth-child(4n)
-    margin-right: 0
+
   &:before
     content: ''
     position: absolute
@@ -108,15 +135,69 @@
     font-size: 18px
     color: #29a5d0
 
+.trip-switcher
+  display: flex
+  flex-direction: row
+  align-items: center
+  position: absolute
+  right: 0
+  top: 176px
+
 .trip-switcher__btn
   font-size: 16px
   line-height: 24px
-  color: #29a5d0
+  color: #797f92
   font-weight: 600
   text-transform: uppercase
   cursor: pointer
 
 .trip-switcher__btn--active
-  color: #65a1d0
+  color: #29a5d0
 
+.trip-switcher__toggle-btn
+  position: relative
+  width: 42px
+  height: 24px
+  padding: 4px 6px
+  border: 1px solid #29a5d0
+  border-radius: 30px
+  margin: 0 13px
+  font-size: 0
+  box-sizing: border-box
 
+.trip-switcher__toggle
+  width: 50%
+  height: 14px
+  display: inline-block
+  cursor: pointer
+
+.trip-switcher__toggle--active
+  background: url(images/offers/oval-blue.svg) center no-repeat
+
+.section__call
+  position: absolute
+  bottom: -232px
+  right: 0
+  padding: 32px
+  background: #ffffff
+  box-shadow: 0 10px 24px 0 rgba(15,71,77,0.16)
+  border-radius: 6px
+  z-index: 5
+
+.section__call-text
+  margin-bottom: 30px
+
+.section__button
+  font-size: 12px
+  line-height: 16px
+  color: #29a5d0
+  font-weight: 600
+
+.section__call-num
+  @extend .section-top-offers__call-num
+
+.section__call-text
+  @extend .section-top-offers__call-text
+
+.section__call-button
+  @extend .section-top-offers__call-button
