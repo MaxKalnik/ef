@@ -2,7 +2,8 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,700,900" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.min.css">
   <title></title>
@@ -13,80 +14,92 @@
       <div class="page-header__logo">
         <a href="#"><img src="images/upper-logo.svg"></a>
       </div>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed">
+        <a class="page-header__toggle-btn" href="#"></a>
+        <a class="page-header__close-btn" href="#"></a>
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link" href="#">Home</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Offers</a>
+            <a class="main-nav__link" href="/offers.html">Offers</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">How to book</a>
+            <a class="main-nav__link" href="/book.html">How to book</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--active" href="#">About</a>
+            <a class="main-nav__link main-nav__link--active" href="/about.html">About</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Contacts</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Blog</a>
+            <a class="main-nav__link" href="/contact.html">Contacts</a>
           </li>
         </ul>
       </nav>
-      <div class="page-header__callback">
-        <div class="page-header__callback-num">
-          <a href="tel:866.456.33.22" class="page-header__callback-upper">call: 24/7</a>
-          <a href="tel:866.456.33.22" class="page-header__callback-lower">866.456.33.22</a>
+      <div class="page-header__callback-container">
+        <a href="" class="page-header__callback-toggle"></a>
+        <a class="page-header__callback-close"></a>
+        <div class="page-header__callback">
+          <div class="page-header__callback-num">
+            <a href="tel:877-975-8147" class="page-header__callback-upper">call: 24/7</a>
+            <a href="tel:877-975-8147" class="page-header__callback-lower">877-975-8147</a>
+          </div>
+          <a class="page-header__callback-button">Request callback</a>
         </div>
-        <a class="page-header__callback-button">Request callback</a>
+        <div class="page-header__fast-quote">
+          <h2 class="fast-quote__title">Need a Fast Quote?</h2>
+          <p class="fast-quote__text">Get a call from the travel expert and free advice within minutes.</p>
+          <h3 class="fast-quote__sub-title">ENTER YOUR PHONE NUMBER</h3>
+          <form action="" method="" class="popup-form popup-form--quote">
+            <div class="popup__phone-wrapper popup__phone-wrapper--quote input-wrapper">
+              <input type="tel" name="phone" placeholder="Enter your number">
+              <span class="popup__label">Phone<sup class="reg">*</sup></span>
+              <div class="popup__select">
+                <div class="popup__select-item">US</div>
+              </div>
+            </div>
+          </form>
+          <div class="fast-quote__btn-container">
+            <a class="fast-quote__btn">Get a free quote</a>
+          </div>
+        </div>
       </div>
     </div>
     <h1 class="main-title">Traveling Business and <br> First Class Smart</h1>
   </header>
 
   <main class="page-content">
-    <div class="wrapper">
-      <section class="section section--top-offers">
-        <h2 class="section__title section__title--top-offers">Travel Manager <br> Advantage</h2>
-        <p class="primary-text primary-text--limited primary-text--top-offers">SkyLux Travel is a team of over 50 hand-picked Business and First Class travel managers with over 11 years of experience. One of our experts will be assigned to be Your Personal Travel Expert. We are available anytime via phone or email offering 24/7/365 global support wherever you are.</p>
-        <h3 class="section__sub-title section__sub-title--top-offers">Our Services</h3>
-        <ul class="section__top-offers-list">
-          <li class="section__top-offers-item">
-            <a class="top-offers-link" href="#">
-              <div class="top-offers-link__upper top-offers-link__upper--sydney">
-                <p class="top-offers-link__price">$ 2,760</p>
-                <p class="top-offers-link__city">Sydney</p>
-              </div>
-              <div class="top-offers-link__button">book now</div>
+    <div class="container">
+      <section class="section section--services">
+      
+        <h2 class="section__title left-line__icon left-line__icon--services">Travel Manager <br> Advantage</h2>
+        
+        <p class="primary-text primary-text--limited left-line__line">SkyLux Travel is a team of over 50 hand-picked Business and First Class travel managers with over 11 years of experience. One of our experts will be assigned to be Your Personal Travel Expert. We are available anytime via phone or email offering 24/7/365 global support wherever you are.</p>
+        
+        <h3 class="section__sub-title left-line__circle">Our Services</h3>
+        
+        <ul class="services__list">
+          <li class="services__item services__item--booking">
+            <a href="#" class="service__item-link">
+              <div class="services__item-picture"></div>
+              <h4 class="services__item-title">Simple & Multi-city bookings</h4>
             </a>
           </li>
-          <li class="section__top-offers-item">
-            <a class="top-offers-link" href="">
-              <div class="top-offers-link__upper top-offers-link__upper--bangkok">
-                <p class="top-offers-link__price">$ 2,479</p>
-                <p class="top-offers-link__city">Bangkok</p>
-              </div>
-              <div class="top-offers-link__button">book now</div>
+          <li class="services__item services__item--tickets">
+            <a href="#" class="service__item-link">
+              <div class="services__item-picture"></div>
+              <h4 class="services__item-title">Business & First class tickets with upgrades</h4>
             </a>
           </li>
-          <li class="section__top-offers-item">
-            <a class="top-offers-link" href="">
-              <div class="top-offers-link__upper top-offers-link__upper--venice">
-                <p class="top-offers-link__price">$ 1,869</p>
-                <p class="top-offers-link__city">Venice</p>
-              </div>
-              <div class="top-offers-link__button">book now</div>
+          <li class="services__item services__item--hotels">
+            <a href="#" class="service__item-link">
+              <div class="services__item-picture"></div>
+              <h4 class="services__item-title">Hotels & Apartments</h4>
             </a>
           </li>
-          <li class="section__top-offers-item">
-            <a class="top-offers-link" href="">
-              <div class="top-offers-link__upper top-offers-link__upper--telaviv">
-                <p class="top-offers-link__price">$ 2,430</p>
-                <p class="top-offers-link__city">Tel Aviv</p>
-              </div>
-              <div class="top-offers-link__button">book now</div>
+          <li class="services__item services__item--rentals">
+            <a href="#" class="service__item-link">
+              <div class="services__item-picture"></div>
+              <h4 class="services__item-title">Car rentals</h4>
             </a>
           </li>
         </ul>
@@ -100,16 +113,41 @@
           <a class="section-top-offers__call-button">request callback</a>
         </div>
       </section>
-      <section class="section section--compare">
-
-        <h2 class="section__title section__title--compare">Your potential Team</h2>
-
-        <p class="primary-text primary-text--compare">All our clients are assigned a dedicated Travel Expert, as we truly believe in the value of one-on-one service. Benefit from our wholesale contacts with airlines and save your time. Our quotation process allows us to cut travel costs without sacrificing travel comfort. Rest assured - You get absolutely the same seat for up to 50-70%* less than you'd pay anywhere online!</p>
-
-        <h3 class="section__sub-title section__sub-title--compare">Our Travel Experts</h3>
-
-      </section>
     </div>
+
+    <section class="section section--team">
+      <div class="container">
+        <h2 class="section__title left-line__icon left-line__icon--team">Your potential Team</h2>
+
+        <p class="primary-text primary-text--less-limited left-line__line">All our clients are assigned a dedicated Travel Expert, as we truly believe in the value of one-on-one service. Benefit from our wholesale contacts with airlines and save your time. Our quotation process allows us to cut travel costs without sacrificing travel comfort. Rest assured - You get absolutely the same seat for up to 50-70%* less than you'd pay anywhere online!</p>
+
+        <h3 class="section__sub-title left-line__circle">Our Travel Experts</h3>
+        
+        <div class="team__image">
+          <img src="images/team-img.png" srcset="images/team-img@2x.png 2x" alt="Our Team">
+        </div>
+      </div>
+      <div class="team__stats">
+        <div class="team__wrapper container">
+          <h3 class="team__stats-title">Team <br> Statistics</h3>
+
+          <ul class="team__stats-list">
+            <li class="team__stats-item">
+              <div class="team__stats-value">3,321</div>
+              <p class="team__stats-descr">Loyal Customers</p>
+            </li>
+            <li class="team__stats-item">
+              <div class="team__stats-value">4,460</div>
+              <p class="team__stats-descr">Tickets Booked This Year</p>
+            </li>
+            <li class="team__stats-item">
+              <div class="team__stats-value">$789k</div>
+              <p class="team__stats-descr">Saved to Last Month</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="page-footer">
@@ -122,30 +160,27 @@
       <div class="page-footer__nav">
         <ul class="page-footer__nav-list">
           <li class="page-footer__nav-item">
-            <a href="#" class="page-footer__nav-link">Home</a>
+            <a href="/index.html" class="page-footer__nav-link">Home</a>
           </li>
           <li class="page-footer__nav-item">
-            <a href="#" class="page-footer__nav-link">Offers</a>
+            <a href="/offers.html" class="page-footer__nav-link">Offers</a>
           </li>
           <li class="page-footer__nav-item">
-            <a href="#" class="page-footer__nav-link">How To Book</a>
+            <a href="/book.html" class="page-footer__nav-link">How To Book</a>
           </li>
           <li class="page-footer__nav-item">
-            <a href="#" class="page-footer__nav-link">About</a>
+            <a href="/about.html" class="page-footer__nav-link">About</a>
           </li>
           <li class="page-footer__nav-item">
-            <a href="#" class="page-footer__nav-link">Contacts</a>
-          </li>
-          <li class="page-footer__nav-item">
-            <a href="#" class="page-footer__nav-link">Blog</a>
+            <a href="/contact.html" class="page-footer__nav-link">Contacts</a>
           </li>
         </ul>
       </div>
       <div class="page-footer__call">
         <a href="tel:855.444.3334" class="page-footer__call-link">Call Us 24/7: 855.444.3334</a>
       </div>
-      <div class="page-cards">
-        <p class="page-cards-text">We accept</p>
+      <div class="page-footer__cards">
+        <p class="page-footer__cards-text">We accept</p>
         <img src="images/visa.svg">
         <img src="images/mastercard.svg">
         <img src="images/discover.svg">
@@ -153,9 +188,9 @@
         <img src="images/paypal.svg">
       </div>
       <div class="socials">
-        <a class="socials__item socials-item--fb"></a>
-        <a class="socials__item socials-item--tw"></a>
-        <a class="socials__item socials-item--go"></a>
+        <a href="https://facebook.com" class="socials__item socials-item--fb"></a>
+        <a href="https://twitter.com" class="socials__item socials-item--tw"></a>
+        <a href="https://plus.google.com" class="socials__item socials-item--go"></a>
       </div>
     </div>
     <div class="page-footer__text-container">
@@ -164,6 +199,65 @@
       <p class="page-footer__text page-footer__text--services">Luxury Travel Services LLC, 388 Market Street, Suite 1300, San Francisco, CA 94111</p>
     </div>
   </footer>
+  <div class="popup-free">
+    <h2 class="section__title section__title--popup">Get a Free Quote</h2>
+        <p class="primary-text primary-text--popup">Our exclusive contacts with the airlines do not allow us to show the details of our discount fares, including flight itineraries and airline brand. Just complete the request form below and one of our experts will get in touch with you with the best itinerary and price options for your flight.</p>
+        <h3 class="section__sub-title section__sub-title--popup">SUBMIT REQUEST NOW</h3>
+
+        <form action="" method="" class="popup-form">
+          <div class="popup__name-wrapper input-wrapper">
+            <input type="text" name="name" id="name" placeholder="Enter your name">
+            <span class="popup__label">Name<sup class="reg">*</sup></span>
+          </div>
+          <div class="popup__email-wrapper input-wrapper">
+            <input type="email" name="email" placeholder="Enter your email">
+            <span class="popup__label">Email<sup class="reg">*</sup></span>
+          </div>
+          <div class="popup__phone-wrapper input-wrapper">
+            <input type="tel" name="phone" placeholder="Enter your number">
+            <span class="popup__label">Phone<sup class="reg">*</sup></span>
+            <div class="popup__select">
+              <div class="popup__select-item">US</div>
+            </div>
+          </div>
+        </form>
+        <a class="popup__btn-quote">get a free quote</a>
+        <p class="popup-free__privacy-text"><sup class="reg">*</sup>By providing my contact details I agree to be contacted for travel information via phone, text messages and email. No purchase necessary. We respect your <a href="#">privacy</a>.</p>
+        <div class="popup__close popup__close--free"></div>
+  </div>
+  <div class="popup-fast">
+    <h2 class="section__title section__title--popup">Need a Fast Quote?</h2>
+    <p class="primary-text primary-text--popup">Get a call from the travel expert and free advice within minutes.</p>
+    <h3 class="section__sub-title section__sub-title--popup">ENTER YOUR PHONE NUMBER</h3>
+
+    <form action="" method="" class="popup-form">
+      <div class="popup__phone-wrapper input-wrapper">
+        <input type="tel" name="phone" placeholder="Enter your number">
+        <span class="popup__label">Phone<sup class="reg">*</sup></span>
+        <div class="popup__select">
+          <div class="popup__select-item">US</div>
+        </div>
+      </div>
+    </form>
+    <a class="popup__btn-quote">get a free quote</a>
+    <div class="popup__close popup__close--fast"></div>
+  </div>
+  <div class="popup-thank-you">
+    <div class="popup-thank-you__close"></div>
+    <h2 class="section__title section__title--popup-tnx">Thank You!</h2>
+    <p class="primary-text primary-text--popup-tnx">Thank you. Your request has been sent. Our expert will be in touch with you shortly.</p>
+    <div class="popup__btn-container">
+      <a class="popup__btn-close">Close</a>
+    </div>
+    <div class="popup__call">
+      <p class="popup__call-text">
+        Need Instant Help?<br>
+        Call for a Deal Right Now
+      </p>
+      <a href="tel:877-975-8147" class="popup__call-num">877-975-8147</a>
+    </div>
+  </div>
+  <div class="blur"></div>
 <script src="js/script.min.js"></script>
 </body>
 </html>

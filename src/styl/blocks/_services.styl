@@ -1,0 +1,65 @@
+.services__list
+  display flex
+  
+  +respond-to(850px)
+    flex-wrap wrap
+
+.services__item
+  width 25%
+  height 384px
+  
+  +respond-to(850px)
+    width 50%
+  
+  +respond-to(550px)
+    height 240px
+    font-size 14px
+
+.service__item-link
+  position relative
+  display block
+  height 100%
+
+.services__item-picture
+  display block
+  width 100%
+  height 100%
+  
+  img
+    width 100%
+    height 100%
+
+.services__item-picture
+  .services__item--booking &
+    background url(images/services/service-booking.jpg) no-repeat center/cover
+    
+    +respond-to(850px)
+      background-position bottom center
+
+  .services__item--tickets &
+    background url(images/services/service-tickets.jpg) no-repeat center/cover
+
+  .services__item--hotels &
+    background url(images/services/service-hotels.jpg) no-repeat center/cover
+
+  .services__item--rentals &
+    background url(images/services/service-rentals.jpg) no-repeat center/cover
+
+.services__item-title
+  position absolute
+  width 100%
+  padding 0 30px
+  left 0
+  top 30px
+  color #fff
+  font-size 16px
+  line-height 24px
+  text-transform uppercase
+  text-align center
+  font-weight 900
+  box-sizing border-box
+  
+  +respond-to(550px)
+    padding: 0 12px
+    top 16px
+    font-size 14px

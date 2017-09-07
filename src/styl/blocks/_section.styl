@@ -1,0 +1,43 @@
+.section--team
+  margin-top 96px
+  
+  +respond-to(1023px)
+    margin-top 64px
+  
+  +respond-to(767px)
+    margin-top 48px
+
+.section--services
+  margin-top 48px
+
+.section--book
+  margin-top 48px
+  margin-bottom 96px
+  
+  +respond-to(1023px)
+    margin-top 32px
+    margin-bottom 64px
+  
+  +respond-to(767px)
+    margin-bottom 48px
+
+.section--contact
+  margin 48px 0 96px
+  
+  +respond-to(1023px)
+    margin 88px 0 48px
+  
+  +respond-to(767px)
+    margin-top 32px
+
+.section--services,
+.section--book,
+.section--contact
+  .primary-text--limited
+    width: calc(100% - 410px)
+
+    +respond-to(1023px)
+      width: calc(100% - 340px)
+
+    +respond-to(767px)
+      width: 100%

@@ -1,0 +1,18 @@
+body
+  display flex
+  flex-direction column
+
+.container
+  width 100%
+  max-width "calc(100px + %s)" % $container-max-width
+  margin 0 auto
+  padding 0 50px
+  box-sizing border-box
+  
+  +respond-to(950px)
+    padding 0 24px
+    max-width "calc(48px + %s)" % $container-max-width
+  
+  +respond-to(550px)
+    padding 0 16px
+    max-width "calc(32px + %s)" % $container-max-width

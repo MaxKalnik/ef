@@ -1,0 +1,142 @@
+.left-line
+  position relative
+  
+  &:after
+    content ''
+    position absolute
+    top 40px
+    left 32px
+    height calc(100% - 59px)
+    width 0px
+    border-left 1px solid $theme_red
+    
+    +respond-to(1439px)
+      left -9px
+    
+    +respond-to(1023px)
+      left 5px
+    
+    +respond-to(767px)
+      display none
+
+.left-line__icon
+  position relative
+  
+  &:before    
+    content ''
+    width 16px
+    height 16px
+    position absolute
+    left -38px
+    top 20px
+    
+    +respond-to(1439px)
+      left -16px
+    
+    +respond-to(1023px)
+      left -2px
+      top 11px
+    
+    +respond-to(767px)
+      display none
+  
+  &:after
+    content ''
+    position absolute
+    width 0
+    height calc(100% - 45px)
+    bottom 0
+    left -32px
+    border-left 1px solid $theme_red
+    
+    +respond-to(1439px)
+      left -9px
+    
+    +respond-to(1023px)
+      left 5px
+      height calc(100% - 29px)
+    
+    +respond-to(767px)
+      display none
+
+.left-line__icon--top-offers:before
+  width 13px
+  background url('images/pointer.svg') center no-repeat
+
+.left-line__icon--compare:before
+  height 15px
+  background url('images/pointer-up.svg') center no-repeat
+
+.left-line__icon--stats:before
+  background url('images/pie-chart.svg') center no-repeat
+
+.left-line__icon--services:before
+  height 14px
+  background url('images/icons/left-line-services.svg') center no-repeat
+
+.left-line__icon--team:before,
+.left-line__icon--contact:before
+  background url('images/icons/left-line-team.svg') center no-repeat
+
+.left-line__icon--book:before
+  background url('images/icons/left-line-book.svg') center no-repeat
+
+.left-line__line
+  position relative
+  
+  &:before
+    content ''
+    position absolute
+    width 0
+    height 100%
+    top 0
+    left -32px
+    border-left 1px solid $theme_red
+    
+    +respond-to(1439px)
+      left -9px
+    
+    +respond-to(1023px)
+      left 5px
+    
+    +respond-to(767px)
+      display none
+
+.left-line__circle
+  position relative
+  
+  &:after
+    content ''
+    position absolute
+    width 0
+    height calc(100% - 18px)
+    top 0
+    left -32px
+    border-left 1px solid $theme_red
+    
+    +respond-to(1439px)
+      left -9px
+    
+    +respond-to(1023px)
+      left 5px
+    
+    +respond-to(767px)
+      display none
+
+  &:before
+    content ''
+    position absolute
+    width 7px
+    height 7px
+    background url('images/oval-red.svg') center no-repeat
+    bottom: 8px
+    left -35px
+    
+    +respond-to(1439px)
+      left -12px
+    
+    +respond-to(1023px)
+      left 2px
+    
+    +respond-to(767px)
+      display none
