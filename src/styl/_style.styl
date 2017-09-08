@@ -16,7 +16,7 @@ body
     background-size: cover
 
   &--home
-    min-height: 528px
+    min-height: 600px
 
 .page-header__toggle-btn
   display: none
@@ -278,6 +278,11 @@ body
 .section__top-offers-item
   width: 25%
 
+.top-offers-link
+  &:hover
+    .top-offers-link__upper
+      transform: scale(1.01)
+
 .top-offers-link__upper
   width: 100%
   height: 384px
@@ -289,7 +294,6 @@ body
 
 .top-offers-link__upper--sydney
   background: url('images/sydney.png')
-  background-size: cover
 
 .top-offers-link__upper--bangkok
   background: url('images/bangkok.png')
@@ -368,6 +372,8 @@ body
     height: 7px
     position: absolute
     top: 64px
+    left: calc(50% + 8px)
+    transform: translateX(-50%)
     background: url('images/oval-red.svg') center no-repeat
 
   &:after
@@ -376,6 +382,7 @@ body
     height: 58px
     position: absolute
     top: 0
+    left: calc(50% + 8px)
     background: #fc5245
 
 .section__btn-container--top-offers
@@ -390,12 +397,16 @@ body
   text-align: center
 
 .section-top-offers__call-num
+  display: block
   font-size: 42px
   line-height: 48px
   color: #fc5245
   font-weight: 700
   margin-top: 30px
   margin-bottom: 16px
+  text-align: center
+  a
+    color: #fc5245
 
 .section-top-offers__call-button
   display: block
@@ -598,8 +609,6 @@ body
 .section__slide-item--first
   opacity: 1
   transition: .5s ease-in
-  &:hover
-    opacity: 1
 
 .section__slide-item--second
   top: 0
@@ -798,7 +807,7 @@ body
   line-height: 16px
   color: #9494a4
   text-transform: uppercase
-  font-weight: 300
+  font-weight: 400
 
 .page-footer__call
   margin-right: 70px
@@ -1123,6 +1132,7 @@ input:focus
   background: #fc5245
   border-radius: 30px
   padding: 12px 50px
+  cursor: pointer
   &:before
     content: ''
     width: 7px
@@ -1193,7 +1203,7 @@ input:focus
   font-size: 12px
   line-height: 16px
   font-weight: 700
-  color: #979ea6
+  color: rgba(255, 255, 255, 0.8)
   text-transform: uppercase
   cursor: pointer
 
@@ -1217,6 +1227,8 @@ input:focus
 
 .search-form__wrapper--sumbit
   .search-form__submit-btn
+    display: block
+    width: 100%
     font-size: 12px
     line-height: 16px
     font-weight: 700
@@ -1225,7 +1237,8 @@ input:focus
     padding: 26px 24px 24px 24px
     border: none
     cursor: pointer
-
+    text-transform: uppercase
+    border-radius: 0 3px 3px 0
 
 .search-form__wrapper--from
   width: 21%
@@ -1301,16 +1314,36 @@ input:focus
   cursor: pointer
 
 .section__btn-see
+  transition: .25s ease
   &:hover
     box-shadow: 0 1px 11px 0 rgba(241,68,55,0.51)
 
 .popup__btn-quote
+  transition: .25s ease
   &:hover
     box-shadow: 0 1px 11px 0 rgba(241,68,55,0.51)
 
 .section__btn-quote
+  transition: .25s ease
   &:hover
     box-shadow: 0 1px 11px 0 rgba(36,121,188,0.51)
+
+.search-form__submit-btn
+  transition: .25s ease
+  &:hover
+    box-shadow: 0 1px 11px 0 rgba(241,68,55,0.51)
+
+.page-header__callback-button
+  transition: .25s ease
+  &:hover
+    background: #ffffff
+    color: #00d3e3
+
+.section-top-offers__call-button
+  transition: .25s ease
+  &:hover
+    background: #29a5d0
+    color: #ffffff
 
 
 .section__btn-quote--white
@@ -1319,7 +1352,7 @@ input:focus
   background: #ffffff
   padding: 12px 47px
   &:hover
-    box-shadow: 0 1px 11px 0 rgba(255,255,255,0.51)
+    box-shadow: 0 1px 11px 0 rgba(0, 0, 0, 1)
     color: #2d2833
 
 .input-warning

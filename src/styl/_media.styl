@@ -183,6 +183,12 @@
     .section__comments-img
       bottom: -80px
 
+  .page-header--book
+    min-height: 436px
+
+  .page-footer__cards
+    width: 100%
+
 @media (max-width: 1023px)
   .page-header
     padding: 0
@@ -307,6 +313,14 @@
 
   .section--top-offers
     margin-bottom: 64px
+
+  .section__btn-container
+    &:before
+      left: 50%
+
+    &:after
+      left: 50%
+
 
   .section__comments-img
     width: 352px
@@ -451,6 +465,10 @@
 
   .search-form__wrapper--sumbit
     width: 100%
+
+  .search-form__submit-btn
+    width: 100%
+    border-radius: 3px
 
   .popup-free
     width: 720px
@@ -892,6 +910,7 @@
     width: 100%
     margin-right: 0
     margin-bottom: 16px
+    min-height: 57px
 
   .page-footer__nav-list
     flex-direction: column
@@ -949,6 +968,10 @@
       top: 40px
       left: 50%
       transform: translateX(-50%)
+      margin-right: 0
+      width: 100%
+      box-sizing: border-box
+      padding: 16px 16px 0 16px
 
     .page-header__fast-quote
       display: block
@@ -961,11 +984,14 @@
       display: none
 
     .page-header__callback-num
-      padding: 12px 60px
+      padding: 12px 50px
       margin-right: 0
       border: 2px solid #50cfe3
       border-radius: 30px
       text-align: center
+      width: 100%
+      margin-right: 0
+      box-sizing: border-box
 
     .page-header__callback-lower
       font-size: 24px
