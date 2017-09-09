@@ -12,6 +12,13 @@
     &:after
       top: 38px
 
+  .section__btn-container--top-offers
+    &:before
+      left: calc(50% + 20px)
+
+    &:after
+      left: calc(50% + 20px)
+
 @media (max-width: 1439px)
   .page-header
     padding: 0 40px 0 40px
@@ -684,7 +691,7 @@
     margin-bottom: 16px
 
   .section__compare-table-container
-    width: 100%
+    width: calc(100% + 16px)
     margin-left: 0
     position: relative
     right: 16px
@@ -1137,8 +1144,16 @@
     padding-left: 0
     flex-direction: column
 
+  .region-switcher__list--opened
+    .region-switcher__link:not(.region-switcher__link--active)
+      display: block
+
+    .region-switcher__link
+      width: 80%
+
   .region-switcher__item
     margin-right: 0
+    cursor: pointer
 
   .region-switcher__link:not(.region-switcher__link--active)
     display: none
@@ -1147,6 +1162,7 @@
     line-height: 16px
     padding: 16px 0 16px 42px
     display: block
+    width: 30%
 
   .region-switcher__link--active
     &:before

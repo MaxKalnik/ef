@@ -60,6 +60,7 @@ $(document).ready(function () {
     });
 
   body.on('click', '.search-form__submit-btn', function () {
+      event.preventDefault();
       $('.popup-free').addClass('popup-show');
       $('.blur').addClass('blur-visible');
     });
@@ -224,5 +225,20 @@ $(document).ready(function () {
       $(this).addClass('trip-switcher__btn--active');
       $(this).siblings('.trip-switcher__toggle-btn').children('.trip-switcher__toggle--business').addClass('trip-switcher__toggle--active');
       $(this).parents('.section').addClass('section__trip-business');
+    });
+
+
+  body.on('click', '.region-switcher__link', function () {
+      $('.region-switcher__link').removeClass('region-switcher__link--active');
+      $(this).addClass('region-switcher__link--active');
+    });
+
+  body.on('click', '.region-switcher__item', function () {
+      $('.region-switcher__list').toggleClass('region-switcher__list--opened');
+    });
+
+  body.on('click', '.region-switcher__link', function () {
+      var scroll_el = $(this).attr('href');
+      $('html, body').animate({scrollTop:$(scroll_el).offset().top}, 2000);
     });
 });
