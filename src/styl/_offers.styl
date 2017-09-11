@@ -59,9 +59,7 @@
     left: 3px
     background: #29a5d0
 
-.section--asia,
-.section--europe,
-.section--middle-east
+.section--offers
   margin-bottom: 96px
 
 .section--asia
@@ -202,3 +200,17 @@
 
 .section__call-button
   @extend .section-top-offers__call-button
+
+.section__trip-price--first
+  display: none
+
+.section__trip-business
+  .section__trip-price--bus
+    display: block
+
+.section__trip-first
+  .section__trip-price--bus
+    display: none
+
+  .section__trip-price--first
+    display: block
