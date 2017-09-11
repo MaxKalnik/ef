@@ -198,6 +198,8 @@ $(document).ready(function () {
       $(this).parent().siblings('.trip-switcher__btn--first').addClass('trip-switcher__btn--active');
       $(this).parents('.section').removeClass('section__trip-business');
       $(this).parents('.section').addClass('section__trip-first');
+      $(this).parents('.section').find('.section__trip-price--bus').hide('1200');
+      $(this).parents('.section').find('.section__trip-price--first').show('1200');
     });
 
   body.on('click', '.trip-switcher__toggle--business', function () {
@@ -207,9 +209,9 @@ $(document).ready(function () {
       $(this).parent().siblings('.trip-switcher__btn--business').addClass('trip-switcher__btn--active');
       $(this).parents('.section').removeClass('section__trip-first');
       $(this).parents('.section').addClass('section__trip-business');
+      $(this).parents('.section').find('.section__trip-price--first').hide('1200');
+      $(this).parents('.section').find('.section__trip-price--bus').show('1200');
     });
-
-
 
   body.on('click', '.trip-switcher__btn--first', function () {
       $(this).siblings().removeClass('trip-switcher__btn--active');
@@ -218,6 +220,8 @@ $(document).ready(function () {
       $(this).siblings('.trip-switcher__toggle-btn').children('.trip-switcher__toggle--first').addClass('trip-switcher__toggle--active');
       $(this).parents('.section').removeClass('section__trip-business');
       $(this).parents('.section').addClass('section__trip-first');
+      $(this).parents('.section').find('.section__trip-price--bus').hide('1500');
+      $(this).parents('.section').find('.section__trip-price--first').show('1500');
     });
 
   body.on('click', '.trip-switcher__btn--business', function () {
@@ -227,8 +231,9 @@ $(document).ready(function () {
       $(this).siblings('.trip-switcher__toggle-btn').children('.trip-switcher__toggle--business').addClass('trip-switcher__toggle--active');
       $(this).parents('.section').removeClass('section__trip-first');
       $(this).parents('.section').addClass('section__trip-business');
+      $(this).parents('.section').find('.section__trip-price--first').hide('1500');
+      $(this).parents('.section').find('.section__trip-price--bus').show('1500');
     });
-
 
   body.on('click', '.region-switcher__link', function () {
       $('.region-switcher__link').removeClass('region-switcher__link--active');
