@@ -332,7 +332,6 @@
     &:after
       left: 50%
 
-
   .section__comments-img
     width: 352px
     height: 480px
@@ -481,6 +480,17 @@
     width: 100%
     border-radius: 3px
 
+  .section__trip-item
+    &:before
+      right: 11px
+
+  .section__trip-text
+    font-size: 14px
+
+  .section__trip-price
+    font-size: 16px
+    right: 22px
+
   .popup-free
     width: 720px
     height: 631px
@@ -566,11 +576,14 @@
     min-height: 276px
 
   .region-switcher
-    padding: 0 75px 0 60px
+    padding: 0 35px 0 35px
+    min-width: 641px
+
+  .region-switcher__item
+    margin-right: 10px
 
   .region-switcher__link
-    padding-top: 24px
-    padding-bottom: 24px
+    padding: 24px 0 24px 10px
 
   .region-switcher__link--active
     &:before
@@ -588,9 +601,6 @@
 
   .trip-switcher
     top: 130px
-
-  .section__trip-price
-    right: 26px
 
   #siteseal
     margin-bottom: 12px
@@ -677,9 +687,6 @@
     position: absolute
     right: 16px
     top: 16px
-
-  .page-header__callback-close
-    position: absolute
 
   .section--top-offers
     padding-bottom: 280px
@@ -972,9 +979,11 @@
       visibility: hidden
 
     .page-header__callback-close
+      position: absolute
       display: block
       top: 16px
       right: 16px
+      cursor: pointer
 
     .page-header__callback
       display: block
@@ -1169,7 +1178,7 @@
     line-height: 16px
     padding: 16px 0 16px 42px
     display: block
-    width: 30%
+    width: 42%
 
   .region-switcher__link--active
     &:before
@@ -1225,9 +1234,15 @@
     margin-top: 16px
     margin-left: 0
 
+  .search-form__wrapper--from
+    input
+      border-radius: 3px
+
   #siteseal
     margin-bottom: 12px
 
+  .section__call-num
+    font-size: 32px
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2)
   .page-header

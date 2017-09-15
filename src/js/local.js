@@ -40,7 +40,6 @@ $(document).ready(function () {
       $('.search-form__btn--roundtrip').addClass('search-form__btn--active');
     });
 
-
   body.on('click', '.page-header__callback-button', function () {
       event.preventDefault();
       $('.popup-fast').addClass('popup-show');
@@ -244,9 +243,9 @@ $(document).ready(function () {
       $('.region-switcher__list').toggleClass('region-switcher__list--opened');
     });
 
-  body.on('click', '.region-switcher__link', function () {
+  body.on('click', '.region-switcher__link', function(event) {
       event.preventDefault();
       var scroll_el = $(this).attr('href');
-      $('html, body').animate({scrollTop:$(scroll_el).offset().top}, 2000);
+      $('html, body').animate({scrollTop:$(scroll_el).position().top}, 2000);
     });
 });
