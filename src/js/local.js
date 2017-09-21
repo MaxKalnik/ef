@@ -248,4 +248,6 @@ $(document).ready(function () {
       var scroll_el = $(this).attr('href');
       $('html, body').animate({scrollTop:$(scroll_el).position().top}, 2000);
     });
+
+  $('.section__trip-price--n-a').parents('.section__trip-item').addClass('without-icon');
 });

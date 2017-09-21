@@ -63,7 +63,7 @@
   margin-bottom: 96px
 
 .section--asia
-  margin-bottom: 80px
+  margin-bottom: 130px
 
 .section
   position: relative
@@ -117,6 +117,8 @@
     height: 7px
     background: url('images/arrow-right.svg') center no-repeat
     background-size: cover
+    opacity: 1
+    transition: opacity .25s ease-in
 
 .section__trip-text
   cursor: pointer
@@ -142,7 +144,7 @@
   align-items: center
   position: absolute
   right: 0
-  top: 176px
+  top: 147px
 
 .trip-switcher__btn
   font-size: 16px
@@ -205,4 +207,9 @@
 
 .section__trip-price--first
   display: none
+
+.section__trip-first
+  .without-icon
+    &:before
+      opacity: 0
 
