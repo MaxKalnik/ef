@@ -2,6 +2,11 @@
   min-height: 400px
   background: url('images/europe/europe-bg.png') center no-repeat
 
+.wrapper.wrapper--europe
+  +respond-to(767px)
+    padding-left: 0
+    padding-right: 0
+
 .section__title.section__title--europe
   &:before
     width: 16px
@@ -9,6 +14,8 @@
 
   +respond-to(767px)
     padding-bottom: 40px
+    padding: 0 16px 40px 16px
+    box-sizing: border-box
 
 .section--europe-flights
   padding-bottom: 96px
@@ -20,6 +27,9 @@
 
 .section__sub-title.section__sub-title--europe
   padding-top: 0
+  +respond-to(767px)
+    padding: 0 16px
+    box-sizing: border-box
 
 .text-black
   color: #484A4d
@@ -32,6 +42,8 @@
   +respond-to(767px)
     padding-bottom: 0
     font-size: 14px
+    padding: 0 16px
+    box-sizing: border-box
 
 .section__compare-table-container--europe
   width: 716px
@@ -48,11 +60,11 @@
     box-sizing: border-box
 
   +respond-to(767px)
-    width: calc(100% + 32px)
+    width: 100%
     position: relative
     padding-left: 0
     overflow-x: scroll
-    right: 16px
+    right: 0
     margin-bottom: 26px
 
   .column-head
@@ -203,8 +215,8 @@
     bottom: 0
 
   +respond-to(767px)
-    left: -16px
-    width: calc(100% + 32px)
+    left: 0
+    width: 100%
 
 .search-form__title
   font-size: 28px
@@ -303,7 +315,10 @@
       border-radius: 30px
 
 
-  .search-form__wrapper--from
+  .search-form__wrapper--from,
+  .search-form__wrapper--class,
+  .search-form__wrapper--to,
+  .search-form__wrapper--round-trip
     input
       +respond-to(767px)
         border-radius: 0
@@ -368,3 +383,4 @@
   +respond-to(767px)
     width: 100%
     margin-left: 0
+    padding: 0 16px
