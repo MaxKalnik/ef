@@ -403,6 +403,9 @@
   font-weight: 400
   margin-left: 40px
   box-sizing: border-box
+  +respond-from(1920px)
+    width: 1100px
+
   +respond-to(1439px)
     width: 536px
 
@@ -414,3 +417,6 @@
     width: 100%
     margin-left: 0
     padding: 0 16px
+
+.text-black--lower
+  text-transform: lowercase
