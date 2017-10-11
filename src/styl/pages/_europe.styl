@@ -4,6 +4,16 @@
   @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2)
     background: url('images/europe/europe-bg@2x.png') center no-repeat
 
+.page-header.page-header--europe
+  +respond-to(1439px)
+    min-height: 280px
+
+  +respond-to(1023px)
+    min-height: 216px
+
+  +respond-to(767px)
+    min-height: 146px
+
 .wrapper.wrapper--europe
   +respond-to(767px)
     padding-left: 0
@@ -44,13 +54,16 @@
   +respond-to(767px)
     padding-bottom: 0
     font-size: 14px
-    padding: 0 16px
+    padding: 0 16px 16px 16px
     box-sizing: border-box
 
 .section__compare-table-container--europe
   width: 716px
   margin-left: 40px
   margin-bottom: 45px
+  +respond-from(1920px)
+    width: 1100px
+
   +respond-to(1439px)
     width: 536px
 
@@ -322,7 +335,7 @@
       height: 52px
       padding: 19px 0 17px 0
       border-radius: 30px
-
+      font-size: 14px
 
   .search-form__wrapper--from,
   .search-form__wrapper--class,
@@ -335,6 +348,10 @@
 .search-form.search-form--europe
   input
     font-weight: 500
+
+  input[value]
+    font-weight: 600
+    color: #2d3539
 
 .section__europe-call
   width: 360px
