@@ -1,6 +1,8 @@
 .page-header--europe
   min-height: 400px
   background: url('images/europe/europe-bg.png') center no-repeat
+  @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2)
+    background: url('images/europe/europe-bg@2x.png') center no-repeat
 
 .wrapper.wrapper--europe
   +respond-to(767px)
@@ -240,10 +242,17 @@
   background: url('images/europe/europe-form-bg.png') center no-repeat
   box-sizing: border-box
   border-radius: 3px 3px 0 0
+  @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2)
+    background: url('images/europe/europe-form-bg@2x.png') center no-repeat
+
   +respond-to(1023px)
     width: 100%
     background: url('images/europe/europe-form-bg-768.png') center no-repeat
     background-size: cover
+    @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2)
+      background: url('images/europe/europe-form-bg-768@2x.png') center no-repeat
+      background-size: cover
+
 
   +respond-to(767px)
     padding: 24px 16px
