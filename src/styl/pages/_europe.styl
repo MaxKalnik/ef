@@ -51,6 +51,12 @@
     background: url('images/offers/icon-plane-red') center no-repeat
 
 .primary-text.primary-text--europe
+  +respond-to(1439px)
+    max-width: 1175px
+
+  +respond-to(1023px)
+    max-width: auto
+
   +respond-to(767px)
     padding-bottom: 0
     font-size: 14px
@@ -65,7 +71,7 @@
     width: 1100px
 
   +respond-to(1439px)
-    width: 536px
+    width: 55%
 
   +respond-to(1023px)
     width: 100%
@@ -141,7 +147,7 @@
       width: 50%
 
     .column-head
-      background: #53648c
+      background: linear-gradient(-180deg, #65769D 0%, #485981 29%, #00123A 100%)
       color: #ffffff
       padding-top: 29px
       padding-bottom: 27px
@@ -172,7 +178,7 @@
       width: 50%
 
     .column-head
-      background: #e14135
+      background: linear-gradient(-180deg, #FC5245 6%, #AD2117 100%)
       color: #ffffff
       padding-top: 29px
       padding-bottom: 27px
@@ -219,7 +225,8 @@
   bottom: 143px
   right: 0
   +respond-to(1439px)
-    bottom: 159px
+    bottom: auto
+    top: 272px
 
   +respond-to(1023px)
     width: calc(100% - 29px)
@@ -347,10 +354,10 @@
 
 .search-form.search-form--europe
   input
-    font-weight: 500
+    font-weight: 400
 
   input[value]
-    font-weight: 600
+    font-weight: 500
     color: #2d3539
 
 .section__europe-call
@@ -407,7 +414,7 @@
     width: 1100px
 
   +respond-to(1439px)
-    width: 536px
+    width: 55%
 
   +respond-to(1023px)
     width: calc(100% - 29px)
